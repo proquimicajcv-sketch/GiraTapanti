@@ -233,7 +233,7 @@ function renderCatalog() {
 
   elements.catalog.innerHTML = organisms
     .map((item) => {
-      const tags = item.tags.map((tag) => `<span class="chip">${tag}</span>`).join("");
+      const tags = item.tags.map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("");
       return `
         <article class="card">
           <h3 class="card__title">${escapeHtml(item.commonName)}</h3>
@@ -276,7 +276,7 @@ function hydrateSightings() {
       return;
     }
 
-    state.sightings = parsed.filter((item) => item && typeof item === "object");
+    state.sightings = parsed.filter(isValidSightingRecord);
   } catch {
     state.sightings = [];
   }
@@ -307,10 +307,7 @@ function renderSightings() {
     .map((item) => {
       const organism = ORGANISMS.find((org) => org.id === item.organismId);
       const label = organism ? organism.commonName : "Organismo desconocido";
-      const date = new Intl.DateTimeFormat("es-CR", {
-        dateStyle: "medium",
-        timeStyle: "short",
-      }).format(new Date(item.createdAt));
+      const date = formatDate(item.createdAt);
 
       const notes = item.notes ? `<p>${escapeHtml(item.notes)}</p>` : "";
 
@@ -323,6 +320,40 @@ function renderSightings() {
       `;
     })
     .join("");
+}
+
+function isValidSightingRecord(item) {
+  if (!item || typeof item !== "object") {
+    return false;
+  }
+
+  const hasMinimumFields =
+    typeof item.organismId === "string" &&
+    item.organismId.length > 0 &&
+    Number.isFinite(Number(item.quantity)) &&
+    Number(item.quantity) >= 1 &&
+    typeof item.zone === "string" &&
+    item.zone.length > 0 &&
+    typeof item.observer === "string" &&
+    item.observer.trim().length > 0;
+
+  if (!hasMinimumFields) {
+    return false;
+  }
+
+  const date = new Date(item.createdAt);
+  return !Number.isNaN(date.getTime());
+}
+
+function formatDate(value) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) {
+    return "fecha inválida";
+  }
+  return new Intl.DateTimeFormat("es-CR", {
+    dateStyle: "medium",
+    timeStyle: "short",
+  }).format(date);
 }
 
 function exportSightings() {
