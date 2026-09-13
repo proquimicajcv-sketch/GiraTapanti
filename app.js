@@ -104,6 +104,9 @@ const ZONE_LABELS = {
   nocturno: "Recorrido nocturno",
 };
 
+const VALID_ORGANISM_IDS = new Set(ORGANISMS.map((item) => item.id));
+const VALID_ZONE_IDS = new Set(Object.keys(ZONE_LABELS));
+
 const state = {
   filters: {
     search: "",
@@ -151,9 +154,16 @@ function setupEvents() {
     const formData = new FormData(elements.sightingForm);
     const organismId = String(formData.get("organism") || "");
     const quantity = Number(formData.get("quantity") || 1);
+    const zone = String(formData.get("sightingZone") || "sendero");
     const observer = String(formData.get("observer") || "").trim();
 
-    if (!organismId || Number.isNaN(quantity) || quantity < 1 || !observer) {
+    if (
+      !isValidOrganismId(organismId) ||
+      Number.isNaN(quantity) ||
+      quantity < 1 ||
+      !observer ||
+      !isValidZone(zone)
+    ) {
       return;
     }
 
@@ -161,7 +171,7 @@ function setupEvents() {
       id: crypto.randomUUID(),
       organismId,
       quantity: Math.floor(quantity),
-      zone: String(formData.get("sightingZone") || "sendero"),
+      zone,
       observer,
       notes: String(formData.get("notes") || "").trim(),
       createdAt: new Date().toISOString(),
@@ -328,12 +338,10 @@ function isValidSightingRecord(item) {
   }
 
   const hasMinimumFields =
-    typeof item.organismId === "string" &&
-    item.organismId.length > 0 &&
+    isValidOrganismId(item.organismId) &&
     Number.isFinite(Number(item.quantity)) &&
     Number(item.quantity) >= 1 &&
-    typeof item.zone === "string" &&
-    item.zone.length > 0 &&
+    isValidZone(item.zone) &&
     typeof item.observer === "string" &&
     item.observer.trim().length > 0;
 
@@ -354,6 +362,14 @@ function formatDate(value) {
     dateStyle: "medium",
     timeStyle: "short",
   }).format(date);
+}
+
+function isValidOrganismId(value) {
+  return typeof value === "string" && VALID_ORGANISM_IDS.has(value);
+}
+
+function isValidZone(value) {
+  return typeof value === "string" && VALID_ZONE_IDS.has(value);
 }
 
 function exportSightings() {
