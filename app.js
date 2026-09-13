@@ -375,7 +375,7 @@ function exportSightings() {
   document.body.append(anchor);
   anchor.click();
   anchor.remove();
-  setTimeout(() => URL.revokeObjectURL(url), 1000);
+  requestAnimationFrame(() => URL.revokeObjectURL(url));
 }
 
 function escapeHtml(value) {
