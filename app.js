@@ -115,6 +115,7 @@ const state = {
     sort: "name",
   },
   sightings: [],
+  storageError: false,
 };
 
 const elements = {
@@ -139,12 +140,20 @@ function init() {
 }
 
 function setupEvents() {
+  const debouncedCatalogRender = debounce(renderCatalog, 180);
+
   elements.filtersForm.addEventListener("input", (event) => {
     const formData = new FormData(elements.filtersForm);
     state.filters.search = String(formData.get("search") || "").trim().toLowerCase();
     state.filters.group = String(formData.get("group") || "all");
     state.filters.zone = String(formData.get("zone") || "all");
     state.filters.sort = String(formData.get("sort") || "name");
+    const target = event.target;
+    const isSearchField = target instanceof HTMLInputElement && target.name === "search";
+    if (isSearchField) {
+      debouncedCatalogRender();
+      return;
+    }
     renderCatalog();
   });
 
@@ -168,7 +177,7 @@ function setupEvents() {
     }
 
     const sighting = {
-      id: crypto.randomUUID(),
+      id: generateRecordId(),
       organismId,
       quantity: Math.floor(quantity),
       zone,
@@ -293,7 +302,14 @@ function hydrateSightings() {
 }
 
 function persistSightings() {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state.sightings));
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.sightings));
+    state.storageError = false;
+    return true;
+  } catch {
+    state.storageError = true;
+    return false;
+  }
 }
 
 function renderSightings() {
@@ -305,8 +321,9 @@ function renderSightings() {
   const latestText = latestTimestamp > 0
     ? formatDate(new Date(latestTimestamp).toISOString())
     : "sin registros";
+  const storageSuffix = state.storageError ? " · almacenamiento local no disponible" : "";
 
-  elements.summary.textContent = `${state.sightings.length} registros · ${total} individuos · Último: ${latestText}`;
+  elements.summary.textContent = `${state.sightings.length} registros · ${total} individuos · Último: ${latestText}${storageSuffix}`;
 
   if (state.sightings.length === 0) {
     elements.sightingList.innerHTML = "<li class='empty-state'>Aún no hay avistamientos guardados.</li>";
@@ -370,6 +387,23 @@ function isValidOrganismId(value) {
 
 function isValidZone(value) {
   return typeof value === "string" && VALID_ZONE_IDS.has(value);
+}
+
+function generateRecordId() {
+  if (typeof crypto !== "undefined" && typeof crypto.randomUUID === "function") {
+    return crypto.randomUUID();
+  }
+  return `${Date.now()}-${Math.random().toString(16).slice(2, 10)}`;
+}
+
+function debounce(callback, delayMs) {
+  let timerId = 0;
+  return (...args) => {
+    if (timerId) {
+      window.clearTimeout(timerId);
+    }
+    timerId = window.setTimeout(() => callback(...args), delayMs);
+  };
 }
 
 function exportSightings() {
