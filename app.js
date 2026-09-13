@@ -152,19 +152,47 @@ function getFilteredOrganisms() {
 function renderDetail(organism) {
   if (!organism) {
     els.detailCard.className = "detail-card empty";
-    els.detailCard.innerHTML = "<p>Selecciona un organismo para ver su ficha.</p>";
+    els.detailCard.textContent = "";
+    const p = document.createElement("p");
+    p.textContent = "Selecciona un organismo para ver su ficha.";
+    els.detailCard.appendChild(p);
     return;
   }
 
   els.detailCard.className = "detail-card";
-  els.detailCard.innerHTML = `
-    <h3>${organism.commonName}</h3>
-    <p><strong>Nombre científico:</strong> <em>${organism.scientificName}</em></p>
-    <p><strong>Grupo:</strong> ${organism.group}</p>
-    <p><strong>Hábitat:</strong> ${organism.habitat}</p>
-    <p><strong>Actividad:</strong> ${organism.activity}</p>
-    <p><strong>Pistas de identificación:</strong> ${organism.clues}</p>
-  `;
+  els.detailCard.textContent = "";
+
+  const h3 = document.createElement("h3");
+  h3.textContent = organism.commonName;
+
+  const pScientific = document.createElement("p");
+  const strongScientific = document.createElement("strong");
+  strongScientific.textContent = "Nombre científico: ";
+  const emScientific = document.createElement("em");
+  emScientific.textContent = organism.scientificName;
+  pScientific.append(strongScientific, emScientific);
+
+  const pGroup = document.createElement("p");
+  const strongGroup = document.createElement("strong");
+  strongGroup.textContent = "Grupo: ";
+  pGroup.append(strongGroup, document.createTextNode(organism.group));
+
+  const pHabitat = document.createElement("p");
+  const strongHabitat = document.createElement("strong");
+  strongHabitat.textContent = "Hábitat: ";
+  pHabitat.append(strongHabitat, document.createTextNode(organism.habitat));
+
+  const pActivity = document.createElement("p");
+  const strongActivity = document.createElement("strong");
+  strongActivity.textContent = "Actividad: ";
+  pActivity.append(strongActivity, document.createTextNode(organism.activity));
+
+  const pClues = document.createElement("p");
+  const strongClues = document.createElement("strong");
+  strongClues.textContent = "Pistas de identificación: ";
+  pClues.append(strongClues, document.createTextNode(organism.clues));
+
+  els.detailCard.append(h3, pScientific, pGroup, pHabitat, pActivity, pClues);
 }
 
 function renderOrganisms() {
@@ -184,15 +212,24 @@ function renderOrganisms() {
     const card = document.createElement("button");
     card.className = "organism-card";
     card.type = "button";
-    card.innerHTML = `
-      <h3>${org.commonName}</h3>
-      <p><em>${org.scientificName}</em></p>
-      <div class="tags">
-        <span class="tag">${org.group}</span>
-        <span class="tag">${org.habitat}</span>
-        <span class="tag">${org.activity}</span>
-      </div>
-    `;
+    const h3 = document.createElement("h3");
+    h3.textContent = org.commonName;
+
+    const p = document.createElement("p");
+    const em = document.createElement("em");
+    em.textContent = org.scientificName;
+    p.appendChild(em);
+
+    const tags = document.createElement("div");
+    tags.className = "tags";
+    [org.group, org.habitat, org.activity].forEach((value) => {
+      const span = document.createElement("span");
+      span.className = "tag";
+      span.textContent = value;
+      tags.appendChild(span);
+    });
+
+    card.append(h3, p, tags);
     card.addEventListener("click", () => renderDetail(org));
     els.organismList.appendChild(card);
     if (index === 0) renderDetail(org);
@@ -232,12 +269,31 @@ function renderSightings() {
     .reverse()
     .forEach((sighting) => {
       const li = document.createElement("li");
-      li.innerHTML = `
-        <strong>${organismLabelById(sighting.organismId)}</strong><br />
-        <small>${new Date(sighting.createdAt).toLocaleString("es-CR")}</small><br />
-        <span><strong>Lugar:</strong> ${sighting.place}</span><br />
-        <span><strong>Nota:</strong> ${sighting.note || "Sin nota"}</span>
-      `;
+      const title = document.createElement("strong");
+      title.textContent = organismLabelById(sighting.organismId);
+
+      const date = document.createElement("small");
+      date.textContent = new Date(sighting.createdAt).toLocaleString("es-CR");
+
+      const place = document.createElement("span");
+      const placeStrong = document.createElement("strong");
+      placeStrong.textContent = "Lugar: ";
+      place.append(placeStrong, document.createTextNode(sighting.place));
+
+      const note = document.createElement("span");
+      const noteStrong = document.createElement("strong");
+      noteStrong.textContent = "Nota: ";
+      note.append(noteStrong, document.createTextNode(sighting.note || "Sin nota"));
+
+      li.append(
+        title,
+        document.createElement("br"),
+        date,
+        document.createElement("br"),
+        place,
+        document.createElement("br"),
+        note,
+      );
       els.sightingsList.appendChild(li);
     });
 }

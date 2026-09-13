@@ -14,11 +14,11 @@ App web para identificación rápida de organismos durante la gira a Tapantí.
 ## Uso
 
 1. Descarga/clona el repositorio.
-2. Abre `/home/runner/work/GiraTapanti/GiraTapanti/index.html` en el navegador.
+2. Abre `index.html` en el navegador.
 3. Para mejor experiencia móvil, abre la app desde un servidor local simple (por ejemplo Live Server en VS Code).
 
 ## Estructura
 
-- `/home/runner/work/GiraTapanti/GiraTapanti/index.html`
-- `/home/runner/work/GiraTapanti/GiraTapanti/styles.css`
-- `/home/runner/work/GiraTapanti/GiraTapanti/app.js`
+- `index.html`
+- `styles.css`
+- `app.js`
