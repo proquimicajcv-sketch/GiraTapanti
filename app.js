@@ -369,13 +369,19 @@ function exportSightings() {
   });
 
   const url = URL.createObjectURL(blob);
-  const anchor = document.createElement("a");
-  anchor.href = url;
-  anchor.download = `tapanti-avistamientos-${new Date().toISOString().slice(0, 10)}.json`;
-  document.body.append(anchor);
-  anchor.click();
-  anchor.remove();
-  requestAnimationFrame(() => URL.revokeObjectURL(url));
+  let anchor;
+  try {
+    anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = `tapanti-avistamientos-${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.append(anchor);
+    anchor.click();
+  } finally {
+    if (anchor) {
+      anchor.remove();
+    }
+    requestAnimationFrame(() => URL.revokeObjectURL(url));
+  }
 }
 
 function escapeHtml(value) {
