@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gira Tapantí | Registro de Organismos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__content container">
+        <h1>Gira Tapantí</h1>
+        <p>
+          Catálogo de organismos y registro de avistamientos para trabajo de campo.
+        </p>
+      </div>
+    </header>
+
+    <main class="container layout">
+      <section class="panel" aria-labelledby="filtros-title">
+        <div class="panel__header">
+          <h2 id="filtros-title">Catálogo</h2>
+          <p id="organism-count" class="muted" aria-live="polite"></p>
+        </div>
+
+        <form id="filters" class="filters" autocomplete="off">
+          <label>
+            Buscar
+            <input
+              id="search"
+              name="search"
+              type="search"
+              placeholder="Nombre común o científico"
+            />
+          </label>
+
+          <label>
+            Grupo
+            <select id="group" name="group">
+              <option value="all">Todos</option>
+              <option value="flora">Flora</option>
+              <option value="fauna">Fauna</option>
+              <option value="fungi">Hongos</option>
+            </select>
+          </label>
+
+          <label>
+            Zona
+            <select id="zone" name="zone">
+              <option value="all">Todas</option>
+              <option value="sendero">Sendero principal</option>
+              <option value="rio">Zona de río</option>
+              <option value="canopy">Dosel / canopy</option>
+              <option value="nocturno">Recorrido nocturno</option>
+            </select>
+          </label>
+
+          <label>
+            Orden
+            <select id="sort" name="sort">
+              <option value="name">Nombre</option>
+              <option value="group">Grupo</option>
+              <option value="zone">Zona</option>
+            </select>
+          </label>
+        </form>
+
+        <div id="catalog" class="catalog" aria-live="polite"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="registro-title">
+        <div class="panel__header">
+          <h2 id="registro-title">Registrar avistamiento</h2>
+          <p class="muted">Guardado local en este dispositivo.</p>
+        </div>
+
+        <form id="sighting-form" class="form-grid">
+          <label>
+            Organismo
+            <select id="organism" name="organism" required></select>
+          </label>
+
+          <label>
+            Cantidad
+            <input
+              id="quantity"
+              name="quantity"
+              type="number"
+              min="1"
+              step="1"
+              value="1"
+              required
+            />
+          </label>
+
+          <label>
+            Zona
+            <select id="sighting-zone" name="sightingZone" required>
+              <option value="sendero">Sendero principal</option>
+              <option value="rio">Zona de río</option>
+              <option value="canopy">Dosel / canopy</option>
+              <option value="nocturno">Recorrido nocturno</option>
+            </select>
+          </label>
+
+          <label>
+            Observador
+            <input
+              id="observer"
+              name="observer"
+              type="text"
+              placeholder="Nombre del observador"
+              required
+            />
+          </label>
+
+          <label class="full-width">
+            Notas
+            <textarea
+              id="notes"
+              name="notes"
+              rows="3"
+              placeholder="Comportamiento, clima, detalles..."
+            ></textarea>
+          </label>
+
+          <button type="submit" class="btn btn--primary">Guardar avistamiento</button>
+        </form>
+
+        <div class="panel__header summary">
+          <h3>Historial</h3>
+          <p id="sighting-summary" class="muted" aria-live="polite"></p>
+        </div>
+
+        <div class="actions">
+          <button id="export-json" type="button" class="btn">Exportar JSON</button>
+          <button id="clear-sightings" type="button" class="btn btn--danger">
+            Borrar historial
+          </button>
+        </div>
+
+        <ul id="sighting-list" class="sighting-list" aria-live="polite"></ul>
+      </section>
+    </main>
+
+    <template id="empty-state-template">
+      <div class="empty-state">
+        <p>No hay resultados para esos filtros.</p>
+      </div>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
