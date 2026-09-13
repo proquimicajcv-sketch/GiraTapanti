@@ -107,6 +107,7 @@ const els = {
 };
 
 const sightingsStorageKey = "giratapanti-sightings";
+let selectedOrganismId = organisms[0]?.id || null;
 
 function uniqueValues(key) {
   return [...new Set(organisms.map((item) => item[key]))].sort();
@@ -208,10 +209,19 @@ function renderOrganisms() {
     return;
   }
 
-  filtered.forEach((org, index) => {
+  const hasSelectedInFiltered = filtered.some((org) => org.id === selectedOrganismId);
+  if (!hasSelectedInFiltered) {
+    selectedOrganismId = filtered[0].id;
+  }
+
+  const selectedOrganism = filtered.find((org) => org.id === selectedOrganismId) || filtered[0];
+  renderDetail(selectedOrganism);
+
+  filtered.forEach((org) => {
     const card = document.createElement("button");
     card.className = "organism-card";
     card.type = "button";
+    card.setAttribute("aria-pressed", String(org.id === selectedOrganismId));
     const h3 = document.createElement("h3");
     h3.textContent = org.commonName;
 
@@ -230,9 +240,11 @@ function renderOrganisms() {
     });
 
     card.append(h3, p, tags);
-    card.addEventListener("click", () => renderDetail(org));
+    card.addEventListener("click", () => {
+      selectedOrganismId = org.id;
+      renderOrganisms();
+    });
     els.organismList.appendChild(card);
-    if (index === 0) renderDetail(org);
   });
 }
 
@@ -251,6 +263,11 @@ function saveSightings(sightings) {
 function organismLabelById(id) {
   const found = organisms.find((item) => item.id === id);
   return found ? found.commonName : id;
+}
+
+function formatTimestamp(value) {
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? "Fecha no disponible" : date.toLocaleString("es-CR");
 }
 
 function renderSightings() {
@@ -273,7 +290,7 @@ function renderSightings() {
       title.textContent = organismLabelById(sighting.organismId);
 
       const date = document.createElement("small");
-      date.textContent = new Date(sighting.createdAt).toLocaleString("es-CR");
+      date.textContent = formatTimestamp(sighting.createdAt);
 
       const place = document.createElement("span");
       const placeStrong = document.createElement("strong");
