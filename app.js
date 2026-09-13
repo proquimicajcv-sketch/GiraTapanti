@@ -57,7 +57,7 @@ const ORGANISMS = [
       "Primate altamente móvil en estratos altos del bosque, sensible a fragmentación de hábitat.",
   },
   {
-    id: "glasfrog",
+    id: "glassfrog",
     commonName: "Rana de vidrio",
     scientificName: "Hyalinobatrachium fleischmanni",
     group: "fauna",
@@ -344,7 +344,7 @@ function exportSightings() {
   document.body.append(anchor);
   anchor.click();
   anchor.remove();
-  URL.revokeObjectURL(url);
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 function escapeHtml(value) {

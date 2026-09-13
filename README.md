@@ -4,9 +4,9 @@ Aplicación web estática para apoyar la gira de campo a Tapantí, con catálogo
 
 ## Estructura
 
-- `/home/runner/work/GiraTapanti/GiraTapanti/index.html`: interfaz principal de la aplicación.
-- `/home/runner/work/GiraTapanti/GiraTapanti/styles.css`: estilos responsivos y componentes visuales.
-- `/home/runner/work/GiraTapanti/GiraTapanti/app.js`: lógica de catálogo, filtros, registro y persistencia en `localStorage`.
+- `index.html`: interfaz principal de la aplicación.
+- `styles.css`: estilos responsivos y componentes visuales.
+- `app.js`: lógica de catálogo, filtros, registro y persistencia en `localStorage`.
 
 ## Funcionalidades
 
@@ -23,11 +23,11 @@ Aplicación web estática para apoyar la gira de campo a Tapantí, con catálogo
 
 No requiere instalación de dependencias.
 
-1. Abre `/home/runner/work/GiraTapanti/GiraTapanti/index.html` en un navegador moderno.
+1. Abre `index.html` en un navegador moderno.
 2. (Opcional recomendado) Si quieres evitar restricciones de `file://`, levanta un servidor estático simple desde la carpeta del repositorio:
 
    ```bash
-   cd /home/runner/work/GiraTapanti/GiraTapanti
+   cd GiraTapanti
    python -m http.server 8080
    ```
 
