@@ -243,7 +243,7 @@ function renderCatalog() {
           <p class="card__desc">${escapeHtml(item.description)}</p>
           <div class="chips">${tags}</div>
           <div class="actions">
-            <button type="button" class="btn btn--primary" data-organism-id="${item.id}">
+            <button type="button" class="btn btn--primary" data-organism-id="${escapeHtml(item.id)}">
               Registrar avistamiento
             </button>
           </div>
@@ -256,7 +256,7 @@ function renderCatalog() {
 function populateOrganismOptions() {
   const options = ORGANISMS.map(
     (item) =>
-      `<option value="${item.id}">${escapeHtml(item.commonName)} (${escapeHtml(item.scientificName)})</option>`,
+      `<option value="${escapeHtml(item.id)}">${escapeHtml(item.commonName)} (${escapeHtml(item.scientificName)})</option>`,
   ).join("");
 
   elements.organismSelect.innerHTML = options;
@@ -288,12 +288,12 @@ function persistSightings() {
 
 function renderSightings() {
   const total = state.sightings.reduce((sum, item) => sum + Number(item.quantity || 0), 0);
-  const latest = state.sightings[0]?.createdAt;
-  const latestText = latest
-    ? new Intl.DateTimeFormat("es-CR", {
-        dateStyle: "medium",
-        timeStyle: "short",
-      }).format(new Date(latest))
+  const latestTimestamp = state.sightings.reduce((max, item) => {
+    const timestamp = new Date(item.createdAt).getTime();
+    return Number.isNaN(timestamp) ? max : Math.max(max, timestamp);
+  }, 0);
+  const latestText = latestTimestamp > 0
+    ? formatDate(new Date(latestTimestamp).toISOString())
     : "sin registros";
 
   elements.summary.textContent = `${state.sightings.length} registros · ${total} individuos · Último: ${latestText}`;
