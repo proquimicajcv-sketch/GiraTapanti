@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiraTapanti</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1>GiraTapanti</h1>
+      <p>Identificación rápida de organismos en campo</p>
+    </header>
+
+    <main class="layout">
+      <section class="panel controls">
+        <h2>Búsqueda y filtros</h2>
+        <label>
+          Buscar
+          <input id="searchInput" type="search" placeholder="Nombre común o científico" />
+        </label>
+
+        <div class="filters">
+          <label>
+            Grupo
+            <select id="groupFilter">
+              <option value="">Todos</option>
+            </select>
+          </label>
+          <label>
+            Hábitat
+            <select id="habitatFilter">
+              <option value="">Todos</option>
+            </select>
+          </label>
+          <label>
+            Actividad
+            <select id="activityFilter">
+              <option value="">Todas</option>
+            </select>
+          </label>
+        </div>
+
+        <p id="resultCount" class="result-count"></p>
+      </section>
+
+      <section class="panel list-panel">
+        <h2>Organismos</h2>
+        <div id="organismList" class="organism-list" aria-live="polite"></div>
+      </section>
+
+      <section class="panel detail-panel">
+        <h2>Detalle</h2>
+        <article id="detailCard" class="detail-card empty">
+          <p>Selecciona un organismo para ver su ficha.</p>
+        </article>
+      </section>
+
+      <section class="panel sightings-panel">
+        <h2>Registro de avistamientos</h2>
+        <form id="sightingForm" class="sighting-form">
+          <label>
+            Organismo
+            <select id="sightingOrganism" required></select>
+          </label>
+          <label>
+            Lugar
+            <input id="sightingPlace" type="text" placeholder="Sendero, quebrada, etc." required />
+          </label>
+          <label>
+            Nota
+            <textarea id="sightingNote" rows="2" placeholder="Comportamiento, clima, observación"></textarea>
+          </label>
+          <button type="submit">Guardar avistamiento</button>
+        </form>
+        <ul id="sightingsList" class="sightings-list"></ul>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+  </html>

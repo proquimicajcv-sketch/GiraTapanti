@@ -1,0 +1,194 @@
+:root {
+  color-scheme: light;
+  --bg: #f3f7f5;
+  --panel: #ffffff;
+  --text: #132a21;
+  --muted: #5f6f67;
+  --accent: #1f8f62;
+  --accent-2: #15573c;
+  --border: #d4e2db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.topbar {
+  background: linear-gradient(120deg, var(--accent-2), var(--accent));
+  color: #fff;
+  padding: 1rem 1.2rem;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.topbar p {
+  margin: 0.25rem 0 0;
+  opacity: 0.95;
+}
+
+.layout {
+  display: grid;
+  gap: 0.9rem;
+  padding: 0.9rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.9rem;
+}
+
+.controls {
+  grid-column: span 12;
+}
+
+.list-panel,
+.detail-panel,
+.sightings-panel {
+  grid-column: span 12;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  margin-top: 0.25rem;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  font: inherit;
+  padding: 0.55rem 0.6rem;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent-2);
+}
+
+.filters {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.result-count {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.organism-list {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.organism-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.65rem;
+  background: #fcfefd;
+}
+
+.organism-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.organism-card p {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.tags {
+  margin-top: 0.45rem;
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #eaf5ef;
+  color: #1e5f42;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  padding: 0.2rem 0.5rem;
+}
+
+.detail-card.empty {
+  color: var(--muted);
+}
+
+.detail-card h3 {
+  margin: 0;
+}
+
+.detail-card p {
+  margin: 0.45rem 0;
+}
+
+.sightings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.8rem 0 0;
+  display: grid;
+  gap: 0.45rem;
+}
+
+.sightings-list li {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 0.5rem;
+  background: #fbfffd;
+}
+
+@media (min-width: 960px) {
+  .controls {
+    grid-column: span 12;
+  }
+
+  .list-panel {
+    grid-column: span 4;
+  }
+
+  .detail-panel {
+    grid-column: span 4;
+  }
+
+  .sightings-panel {
+    grid-column: span 4;
+  }
+
+  .filters {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
