@@ -104,6 +104,7 @@ const els = {
   sightingPlace: document.getElementById("sightingPlace"),
   sightingNote: document.getElementById("sightingNote"),
   sightingsList: document.getElementById("sightingsList"),
+  sightingsStatus: document.getElementById("sightingsStatus"),
 };
 
 const sightingsStorageKey = "giratapanti-sightings";
@@ -282,6 +283,7 @@ function formatTimestamp(value) {
 function renderSightings() {
   const sightings = getSightings();
   els.sightingsList.innerHTML = "";
+  els.sightingsStatus.textContent = `${sightings.length} avistamiento(s) guardado(s).`;
 
   if (!sightings.length) {
     const li = document.createElement("li");
@@ -339,6 +341,7 @@ function onSubmitSighting(event) {
   });
   saveSightings(sightings);
   els.sightingForm.reset();
+  els.sightingOrganism.value = organismId;
   renderSightings();
 }
 
