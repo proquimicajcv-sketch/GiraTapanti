@@ -294,34 +294,34 @@ function renderSightings() {
 
   for (let i = sightings.length - 1; i >= 0; i -= 1) {
     const sighting = sightings[i];
-      const li = document.createElement("li");
-      const title = document.createElement("strong");
-      title.textContent = organismLabelById(sighting.organismId);
+    const li = document.createElement("li");
+    const title = document.createElement("strong");
+    title.textContent = organismLabelById(sighting.organismId);
 
-      const date = document.createElement("small");
-      date.textContent = formatTimestamp(sighting.createdAt);
+    const date = document.createElement("small");
+    date.textContent = formatTimestamp(sighting.createdAt);
 
-      const place = document.createElement("span");
-      const placeStrong = document.createElement("strong");
-      placeStrong.textContent = "Lugar: ";
-      place.append(placeStrong, document.createTextNode(sighting.place));
+    const place = document.createElement("span");
+    const placeStrong = document.createElement("strong");
+    placeStrong.textContent = "Lugar: ";
+    place.append(placeStrong, document.createTextNode(sighting.place));
 
-      const note = document.createElement("span");
-      const noteStrong = document.createElement("strong");
-      noteStrong.textContent = "Nota: ";
-      note.append(noteStrong, document.createTextNode(sighting.note || "Sin nota"));
+    const note = document.createElement("span");
+    const noteStrong = document.createElement("strong");
+    noteStrong.textContent = "Nota: ";
+    note.append(noteStrong, document.createTextNode(sighting.note || "Sin nota"));
 
-      li.append(
-        title,
-        document.createElement("br"),
-        date,
-        document.createElement("br"),
-        place,
-        document.createElement("br"),
-        note,
-      );
-      els.sightingsList.appendChild(li);
-    }
+    li.append(
+      title,
+      document.createElement("br"),
+      date,
+      document.createElement("br"),
+      place,
+      document.createElement("br"),
+      note,
+    );
+    els.sightingsList.appendChild(li);
+  }
 }
 
 function onSubmitSighting(event) {
