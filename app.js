@@ -218,10 +218,11 @@ function renderOrganisms() {
   renderDetail(selectedOrganism);
 
   filtered.forEach((org) => {
-    const card = document.createElement("button");
+    const card = document.createElement("div");
     card.className = "organism-card";
-    card.type = "button";
-    card.setAttribute("aria-pressed", String(org.id === selectedOrganismId));
+    card.setAttribute("role", "option");
+    card.setAttribute("aria-selected", String(org.id === selectedOrganismId));
+    card.tabIndex = 0;
     const h3 = document.createElement("h3");
     h3.textContent = org.commonName;
 
@@ -240,9 +241,17 @@ function renderOrganisms() {
     });
 
     card.append(h3, p, tags);
-    card.addEventListener("click", () => {
+    const selectOrganism = () => {
       selectedOrganismId = org.id;
       renderOrganisms();
+    };
+
+    card.addEventListener("click", selectOrganism);
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        selectOrganism();
+      }
     });
     els.organismList.appendChild(card);
   });
@@ -281,10 +290,8 @@ function renderSightings() {
     return;
   }
 
-  sightings
-    .slice()
-    .reverse()
-    .forEach((sighting) => {
+  for (let i = sightings.length - 1; i >= 0; i -= 1) {
+    const sighting = sightings[i];
       const li = document.createElement("li");
       const title = document.createElement("strong");
       title.textContent = organismLabelById(sighting.organismId);
@@ -312,7 +319,7 @@ function renderSightings() {
         note,
       );
       els.sightingsList.appendChild(li);
-    });
+    }
 }
 
 function onSubmitSighting(event) {
