@@ -30,6 +30,12 @@ body {
   color: var(--text);
 }
 
+input,
+select,
+button {
+  font: inherit;
+}
+
 .app-shell {
   width: min(1440px, calc(100% - 32px));
   margin: 0 auto;
@@ -44,7 +50,11 @@ body {
   margin-bottom: 20px;
 }
 
-.hero, .toolbar, .results-bar, .species-card {
+.hero,
+.toolbar,
+.results-bar,
+.species-card,
+.empty-state {
   border: 1px solid var(--border);
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(8, 29, 33, 0.98), rgba(5, 20, 23, 0.96));
@@ -89,9 +99,13 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.hero-label {
+.hero-label,
+.field span,
+.info-box h3,
+.catalog-id,
+.image-helper,
+#datasetHint {
   display: block;
-  margin-bottom: 6px;
   color: var(--muted);
   font-size: 0.78rem;
   text-transform: uppercase;
@@ -100,7 +114,7 @@ h1 {
 
 .toolbar {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr;
+  grid-template-columns: minmax(0, 2.2fr) repeat(3, minmax(0, 1fr));
   gap: 14px;
   padding: 16px;
 }
@@ -110,18 +124,8 @@ h1 {
   gap: 8px;
 }
 
-.field span {
-  font-size: 0.84rem;
-  color: var(--muted);
-  font-weight: 700;
-  letter-spacing: 0.03em;
-}
-
-input, select, button {
-  font: inherit;
-}
-
-input, select {
+input,
+select {
   width: 100%;
   border-radius: 14px;
   border: 1px solid rgba(93, 226, 209, 0.18);
@@ -131,7 +135,8 @@ input, select {
   outline: none;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(93, 226, 209, 0.12);
 }
@@ -145,23 +150,38 @@ input:focus, select:focus {
   margin: 16px 0;
 }
 
-.results-bar p {
+.results-bar p,
+#datasetHint {
   margin: 0;
+}
+
+.results-bar p {
   font-weight: 700;
 }
 
-.ghost-button {
+.ghost-button,
+.save-button {
   border: 1px solid rgba(93, 226, 209, 0.22);
-  background: rgba(93, 226, 209, 0.08);
-  color: var(--text);
   border-radius: 12px;
   padding: 12px 16px;
   cursor: pointer;
 }
 
+.ghost-button {
+  background: rgba(93, 226, 209, 0.08);
+  color: var(--text);
+}
+
+.save-button {
+  background: rgba(86, 211, 154, 0.16);
+  border-color: rgba(86, 211, 154, 0.4);
+  color: #d7fff0;
+  font-weight: 800;
+}
+
 .species-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 18px;
 }
 
@@ -174,15 +194,29 @@ input:focus, select:focus {
   background: linear-gradient(180deg, rgba(8, 44, 50, 0.88), rgba(8, 31, 35, 0.65));
 }
 
-.card-meta {
+.card-meta,
+.card-heading,
+.card-links,
+.image-helper {
   display: flex;
   gap: 10px;
+}
+
+.card-meta {
   align-items: center;
   margin-bottom: 12px;
   flex-wrap: wrap;
 }
 
-.badge, .family-pill {
+.card-heading {
+  align-items: start;
+  justify-content: space-between;
+}
+
+.badge,
+.family-pill,
+.group-pill,
+.status-pill {
   display: inline-flex;
   align-items: center;
   border-radius: 999px;
@@ -194,27 +228,74 @@ input:focus, select:focus {
 }
 
 .badge {
+  color: #eafffb;
+  border: 1px solid rgba(153, 233, 225, 0.3);
+  background: rgba(93, 226, 209, 0.14);
+}
+
+.status-pill {
   color: var(--warning);
   border: 1px solid rgba(255, 201, 77, 0.35);
   background: rgba(255, 201, 77, 0.08);
 }
 
-.family-pill {
+.family-pill,
+.group-pill {
   color: #bfd8de;
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.card-top h2 {
-  margin: 0;
-  font-size: 1.6rem;
-  line-height: 1.1;
+.b-amphibia {
+  background: rgba(67, 183, 140, 0.22);
+  border-color: rgba(67, 183, 140, 0.48);
 }
 
-.card-top p {
+.b-viper {
+  background: rgba(198, 114, 92, 0.22);
+  border-color: rgba(255, 126, 126, 0.42);
+}
+
+.b-reptile,
+.b-sauria {
+  background: rgba(113, 170, 92, 0.2);
+  border-color: rgba(170, 218, 120, 0.32);
+}
+
+.b-mammal {
+  background: rgba(163, 120, 210, 0.18);
+  border-color: rgba(184, 143, 227, 0.4);
+}
+
+.b-bird {
+  background: rgba(104, 151, 245, 0.18);
+  border-color: rgba(134, 168, 255, 0.42);
+}
+
+.b-plant {
+  background: rgba(90, 188, 113, 0.18);
+  border-color: rgba(122, 226, 146, 0.35);
+}
+
+.b-invertebrate {
+  background: rgba(217, 166, 93, 0.18);
+  border-color: rgba(255, 201, 77, 0.32);
+}
+
+.card-top h2 {
+  margin: 4px 0 0;
+  font-size: 1.5rem;
+  line-height: 1.12;
+}
+
+.scientific-name {
   margin: 6px 0 0;
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.catalog-id {
+  margin: 0;
 }
 
 .image-panel {
@@ -233,8 +314,14 @@ input:focus, select:focus {
 .image-frame img {
   width: 100%;
   height: 100%;
+  min-height: 260px;
   object-fit: cover;
   display: block;
+}
+
+.image-helper {
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
 .card-body {
@@ -259,20 +346,8 @@ input:focus, select:focus {
   gap: 8px;
 }
 
-.url-form span {
-  color: var(--muted);
-  font-weight: 800;
-  font-size: 0.84rem;
-}
-
-.url-form .save-button {
-  border: 1px solid rgba(86, 211, 154, 0.4);
-  background: rgba(86, 211, 154, 0.16);
-  color: #d7fff0;
-  border-radius: 12px;
-  padding: 13px 16px;
-  font-weight: 800;
-  cursor: pointer;
+.card-links {
+  flex-wrap: wrap;
 }
 
 .open-link {
@@ -285,11 +360,24 @@ input:focus, select:focus {
   text-decoration: underline;
 }
 
+.is-disabled {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
 .card-feedback {
   min-height: 1.4em;
   margin: 0;
   color: var(--muted);
   font-size: 0.92rem;
+}
+
+.card-feedback.success {
+  color: var(--success);
+}
+
+.card-feedback.error {
+  color: var(--danger);
 }
 
 .info-grid {
@@ -307,9 +395,6 @@ input:focus, select:focus {
 
 .info-box h3 {
   margin: 0 0 8px;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   color: #9ed4df;
 }
 
@@ -319,11 +404,32 @@ input:focus, select:focus {
   line-height: 1.5;
 }
 
-@media (max-width: 1100px) {
-  .hero, .toolbar, .species-grid {
+.empty-state {
+  padding: 22px;
+}
+
+.empty-state h2,
+.empty-state p {
+  margin: 0;
+}
+
+.empty-state p + p {
+  margin-top: 10px;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@media (max-width: 1180px) {
+  .hero,
+  .toolbar {
     grid-template-columns: 1fr;
   }
+}
 
+@media (max-width: 920px) {
+  .species-grid,
   .info-grid {
     grid-template-columns: 1fr;
   }
@@ -335,16 +441,21 @@ input:focus, select:focus {
     padding-top: 12px;
   }
 
-  .hero > div, .toolbar, .results-bar, .card-top, .image-panel, .card-body {
+  .hero > div,
+  .toolbar,
+  .results-bar,
+  .card-top,
+  .image-panel,
+  .card-body {
     padding-left: 14px;
     padding-right: 14px;
   }
 
-  .url-form {
+  .url-form,
+  .results-bar,
+  .card-heading,
+  .image-helper {
     grid-template-columns: 1fr;
-  }
-
-  .results-bar {
     flex-direction: column;
     align-items: stretch;
   }

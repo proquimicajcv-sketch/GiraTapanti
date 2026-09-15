@@ -3,28 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tapanti · Curación de especies</title>
-    <meta name="description" content="Catálogo curado de especies observadas en Tapantí con edición segura de imágenes públicas y persistencia local." />
+    <title>Tapanti · Catálogo curado de especies</title>
+    <meta
+      name="description"
+      content="Catálogo curado de 100 especies de Tapantí con fichas enriquecidas, búsqueda, filtros e imágenes públicas persistidas de forma segura."
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="app-shell">
       <header class="hero">
         <div>
-          <p class="eyebrow">Tapanti · identificación y curación</p>
-          <h1>Catálogo visual de especies</h1>
+          <p class="eyebrow">Tapantí · guía curada de campo</p>
+          <h1>Catálogo visual de especies confirmadas</h1>
           <p class="hero-copy">
-            Revisa fichas botánicas listas para campo, ajusta la URL pública de la imagen de referencia y conserva los cambios en este navegador.
+            Explora fichas ricas en taxonomía, anatomía, fisiología, etología, curiosidades y enlaces de referencia.
+            La imagen pública de cada ficha puede editarse con validación segura y se conserva solo en este navegador.
           </p>
         </div>
         <div class="hero-panel">
           <div>
-            <span class="hero-label">Objetivo</span>
-            <strong>Curar evidencia visual y notas descriptivas</strong>
+            <span class="hero-label">Catálogo</span>
+            <strong id="heroSpeciesCount">Cargando especies…</strong>
+          </div>
+          <div>
+            <span class="hero-label">Cobertura</span>
+            <strong id="heroGroupCount">Preparando grupos…</strong>
           </div>
           <div>
             <span class="hero-label">Persistencia</span>
-            <strong>localStorage seguro por especie</strong>
+            <strong>Overrides locales de imagen seguros</strong>
           </div>
         </div>
       </header>
@@ -33,7 +41,14 @@
         <section class="toolbar" aria-label="Filtros del catálogo">
           <label class="field search-field">
             <span>Buscar especie</span>
-            <input id="searchInput" type="search" placeholder="Ej. Mimosa, Monstera, helecho..." />
+            <input id="searchInput" type="search" placeholder="Nombre científico, común, familia, anatomía…" />
+          </label>
+
+          <label class="field">
+            <span>Grupo</span>
+            <select id="groupFilter">
+              <option value="all">Todos</option>
+            </select>
           </label>
 
           <label class="field">
@@ -52,13 +67,23 @@
         </section>
 
         <section class="results-bar" aria-live="polite">
-          <p id="resultsSummary"></p>
+          <div>
+            <p id="resultsSummary">Cargando catálogo…</p>
+            <small id="datasetHint">Fuente principal: <code>tapanti_curada_100_confirmada.json</code></small>
+          </div>
           <button id="resetFiltersButton" class="ghost-button" type="button">Restablecer filtros</button>
         </section>
 
         <section id="speciesGrid" class="species-grid" aria-label="Fichas de especies"></section>
       </main>
     </div>
+
+    <template id="emptyStateTemplate">
+      <article class="empty-state">
+        <h2>Sin resultados</h2>
+        <p>No hay especies que coincidan con los filtros actuales. Restablece los filtros para volver al catálogo completo.</p>
+      </article>
+    </template>
 
     <script src="./app.js"></script>
   </body>
