@@ -325,8 +325,10 @@ function matchesFilters(species) {
 }
 
 function renderEmptyState() {
+  if (!elements.speciesGrid) return;
+
   elements.speciesGrid.innerHTML = "";
-  if (elements.emptyStateTemplate?.content) {
+  if (elements.emptyStateTemplate?.content && typeof elements.speciesGrid.append === "function") {
     elements.speciesGrid.append(elements.emptyStateTemplate.content.cloneNode(true));
     return;
   }
@@ -503,10 +505,14 @@ function updateHeroMeta(visibleSpecies = state.species) {
 
 function render() {
   const visibleSpecies = state.species.filter(matchesFilters);
-  const visibleLabel = visibleSpecies.length === 1 ? "especie visible" : "especies visibles";
   updateHeroMeta(visibleSpecies);
-
-  elements.resultsSummary.textContent = `${visibleSpecies.length} ${visibleLabel} · ${state.species.length} fichas en el catálogo curado`;
+  if (visibleSpecies.length === 0) {
+    elements.resultsSummary.textContent = `Sin especies visibles · ${state.species.length} fichas en el catálogo curado`;
+  } else if (visibleSpecies.length === 1) {
+    elements.resultsSummary.textContent = `1 especie visible · ${state.species.length} fichas en el catálogo curado`;
+  } else {
+    elements.resultsSummary.textContent = `${visibleSpecies.length} especies visibles · ${state.species.length} fichas en el catálogo curado`;
+  }
 
   if (visibleSpecies.length === 0) {
     renderEmptyState();
