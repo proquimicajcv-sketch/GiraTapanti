@@ -497,15 +497,14 @@ function handleUrlSave(speciesId, rawValue) {
   render();
 }
 
-function updateHeroMeta(visibleSpecies = state.species) {
-  const visibleGroups = uniqueSortedValues(visibleSpecies.map((item) => item.groupLabel));
-  elements.heroSpeciesCount.textContent = `${visibleSpecies.length} fichas curadas para identificación visual`;
+function updateHeroMeta() {
+  const visibleGroups = uniqueSortedValues(state.species.map((item) => item.groupLabel));
+  elements.heroSpeciesCount.textContent = `${state.species.length} fichas curadas para identificación visual`;
   elements.heroGroupCount.textContent = `Guardado local de URL por especie · ${visibleGroups.length} grupos`;
 }
 
 function render() {
   const visibleSpecies = state.species.filter(matchesFilters);
-  updateHeroMeta(visibleSpecies);
   if (visibleSpecies.length === 0) {
     elements.resultsSummary.textContent = `Sin especies visibles · ${state.species.length} fichas en el catálogo curado`;
   } else if (visibleSpecies.length === 1) {
@@ -568,6 +567,7 @@ async function bootstrap() {
     const overrides = readStoredOverrides();
     state.species = mergeSpeciesWithOverrides(seedSpecies, overrides);
     populateFilters();
+    updateHeroMeta();
     bindEvents();
     render();
   } catch (error) {
