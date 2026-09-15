@@ -12,16 +12,15 @@ Aplicación web estática para consultar y curar un catálogo visual de especies
 
 ## Archivos principales
 
-- `/home/runner/work/GiraTapanti/GiraTapanti/index.html` — estructura principal de la interfaz.
-- `/home/runner/work/GiraTapanti/GiraTapanti/styles.css` — tema oscuro, layout responsive y estilos de fichas.
-- `/home/runner/work/GiraTapanti/GiraTapanti/app.js` — carga del JSON, filtros, render seguro y persistencia local de imágenes.
-- `/home/runner/work/GiraTapanti/GiraTapanti/tapanti_curada_100_confirmada.json` — catálogo estático editable de 100 especies.
+- `index.html` — estructura principal de la interfaz.
+- `styles.css` — tema oscuro, layout responsive y estilos de fichas.
+- `app.js` — carga del JSON, filtros, render seguro y persistencia local de imágenes.
+- `tapanti_curada_100_confirmada.json` — catálogo estático editable de 100 especies.
 
 ## Cómo usarla
 
 1. Sirve la raíz del repositorio con un servidor estático, por ejemplo:
    ```bash
-   cd /home/runner/work/GiraTapanti/GiraTapanti
    python3 -m http.server 4173
    ```
 2. Abre `http://localhost:4173` en un navegador moderno.

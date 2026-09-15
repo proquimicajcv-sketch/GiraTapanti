@@ -91,7 +91,7 @@ function buildDefaultLinks(record) {
   const encoded = encodeURIComponent(scientific);
   const group = String(record.group || "");
 
-  if (group === "anuro" || group === "anfibio" || group === "ave") {
+  if (group === "ave") {
     return {
       inatUrl: `https://www.inaturalist.org/taxa/search?q=${encoded}`,
       specUrl: `https://xeno-canto.org/explore?query=${encoded}`,
