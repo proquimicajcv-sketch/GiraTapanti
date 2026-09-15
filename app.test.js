@@ -143,6 +143,8 @@ test('bootstrap loads catalog and populates filters with stable group values', a
   assert.equal(elements.get('groupFilter').appended[0].value, 'anfibio');
   assert.equal(elements.get('groupFilter').appended[0].textContent, 'Anfibio');
   assert.match(elements.get('resultsSummary').textContent, /1 especie visible/);
+  assert.match(elements.get('heroSpeciesCount').textContent, /1 fichas curadas/);
+  assert.match(elements.get('heroGroupCount').textContent, /1 grupos/);
 });
 
 test('filters can produce empty state without crashing', async () => {

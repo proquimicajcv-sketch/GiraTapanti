@@ -280,6 +280,8 @@ function appendOptions(selectElement, options) {
 }
 
 function populateFilters() {
+  if (!elements.groupFilter || !elements.familyFilter || !elements.statusFilter) return;
+
   const groupOptions = [...new Map(state.species.map((item) => [item.group, item.groupLabel])).entries()]
     .map(([value, label]) => ({ value, label }))
     .sort((left, right) => left.label.localeCompare(right.label, "es"));
@@ -342,9 +344,17 @@ function renderEmptyState() {
 }
 
 function renderError(message) {
-  elements.resultsSummary.textContent = message;
-  elements.heroSpeciesCount.textContent = "Sin datos";
-  elements.heroGroupCount.textContent = "Revisa la carga del JSON";
+  if (elements.resultsSummary) {
+    elements.resultsSummary.textContent = message;
+  }
+  if (elements.heroSpeciesCount) {
+    elements.heroSpeciesCount.textContent = "Sin datos";
+  }
+  if (elements.heroGroupCount) {
+    elements.heroGroupCount.textContent = "Revisa la carga del JSON";
+  }
+  if (!elements.speciesGrid) return;
+
   elements.speciesGrid.innerHTML = `
     <article class="empty-state">
       <h2>Error al cargar el catálogo</h2>
@@ -499,11 +509,17 @@ function handleUrlSave(speciesId, rawValue) {
 
 function updateHeroMeta() {
   const visibleGroups = uniqueSortedValues(state.species.map((item) => item.groupLabel));
-  elements.heroSpeciesCount.textContent = `${state.species.length} fichas curadas para identificación visual`;
-  elements.heroGroupCount.textContent = `Guardado local de URL por especie · ${visibleGroups.length} grupos`;
+  if (elements.heroSpeciesCount) {
+    elements.heroSpeciesCount.textContent = `${state.species.length} fichas curadas para identificación visual`;
+  }
+  if (elements.heroGroupCount) {
+    elements.heroGroupCount.textContent = `Guardado local de URL por especie · ${visibleGroups.length} grupos`;
+  }
 }
 
 function render() {
+  if (!elements.resultsSummary || !elements.speciesGrid) return;
+
   const visibleSpecies = state.species.filter(matchesFilters);
   if (visibleSpecies.length === 0) {
     elements.resultsSummary.textContent = `Sin especies visibles · ${state.species.length} fichas en el catálogo curado`;
@@ -527,37 +543,47 @@ function resetFilters() {
   state.group = "all";
   state.family = "all";
   state.status = "all";
-  elements.searchInput.value = "";
-  elements.groupFilter.value = "all";
-  elements.familyFilter.value = "all";
-  elements.statusFilter.value = "all";
+  if (elements.searchInput) elements.searchInput.value = "";
+  if (elements.groupFilter) elements.groupFilter.value = "all";
+  if (elements.familyFilter) elements.familyFilter.value = "all";
+  if (elements.statusFilter) elements.statusFilter.value = "all";
   render();
 }
 
 function bindEvents() {
   if (state.eventsBound) return;
 
-  elements.searchInput.addEventListener("input", () => {
-    state.search = elements.searchInput.value.trim().toLocaleLowerCase("es");
-    render();
-  });
+  if (elements.searchInput) {
+    elements.searchInput.addEventListener("input", () => {
+      state.search = elements.searchInput.value.trim().toLocaleLowerCase("es");
+      render();
+    });
+  }
 
-  elements.groupFilter.addEventListener("change", () => {
-    state.group = elements.groupFilter.value;
-    render();
-  });
+  if (elements.groupFilter) {
+    elements.groupFilter.addEventListener("change", () => {
+      state.group = elements.groupFilter.value;
+      render();
+    });
+  }
 
-  elements.familyFilter.addEventListener("change", () => {
-    state.family = elements.familyFilter.value;
-    render();
-  });
+  if (elements.familyFilter) {
+    elements.familyFilter.addEventListener("change", () => {
+      state.family = elements.familyFilter.value;
+      render();
+    });
+  }
 
-  elements.statusFilter.addEventListener("change", () => {
-    state.status = elements.statusFilter.value;
-    render();
-  });
+  if (elements.statusFilter) {
+    elements.statusFilter.addEventListener("change", () => {
+      state.status = elements.statusFilter.value;
+      render();
+    });
+  }
 
-  elements.resetFiltersButton.addEventListener("click", resetFilters);
+  if (elements.resetFiltersButton) {
+    elements.resetFiltersButton.addEventListener("click", resetFilters);
+  }
   state.eventsBound = true;
 }
 
@@ -585,5 +611,11 @@ if (typeof module !== "undefined" && module.exports) {
 }
 
 if (typeof window !== "undefined" && typeof document !== "undefined" && !window.__TAPANTI_DISABLE_AUTO_BOOTSTRAP__) {
-  bootstrap();
+  bootstrap().catch((error) => {
+    try {
+      renderError(error instanceof Error ? error.message : "Error de inicialización.");
+    } catch {
+      /* no-op fallback */
+    }
+  });
 }
