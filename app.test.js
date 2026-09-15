@@ -330,7 +330,7 @@ test('mergeSpeciesWithOverrides keeps seeded publicImageUrl when no override exi
   assert.equal(merged[0].publicImageUrl, 'https://example.com/seed-public.jpg');
 });
 
-test('mergeSpeciesWithOverrides restores base image when override is marked as cleared', () => {
+test('mergeSpeciesWithOverrides restores curated public image when override is marked as cleared', () => {
   global.window = {
     __TAPANTI_DISABLE_AUTO_BOOTSTRAP__: true,
     localStorage: { getItem() { return null; }, setItem() {} },
@@ -349,7 +349,7 @@ test('mergeSpeciesWithOverrides restores base image when override is marked as c
     { 'duellmanohyla-rufioculis': { cleared: true } },
   );
 
-  assert.equal(merged[0].publicImageUrl, 'https://example.com/base.jpg');
+  assert.equal(merged[0].publicImageUrl, 'https://example.com/seed-public.jpg');
 });
 
 test('url save handles invalid input and clearing persisted overrides', async () => {
@@ -414,4 +414,55 @@ test('url save handles invalid input and clearing persisted overrides', async ()
   app.handleUrlSave('duellmanohyla-rufioculis', '   ');
   assert.equal(writes.at(-1).value, '{"duellmanohyla-rufioculis":{"cleared":true}}');
   assert.match(elements.get('speciesGrid').innerHTML, /Se restauró la imagen de referencia de la ficha/);
+});
+
+test('clearing a custom URL restores the curated public image when available', async () => {
+  const elements = new Map([
+    ['searchInput', makeElement()],
+    ['groupFilter', makeElement()],
+    ['familyFilter', makeElement()],
+    ['statusFilter', makeElement()],
+    ['resetFiltersButton', makeElement()],
+    ['resultsSummary', makeElement()],
+    ['speciesGrid', makeElement()],
+    ['emptyStateTemplate', { content: { cloneNode() { return { outerHTML: '<article class="empty-state"></article>' }; } } }],
+    ['heroSpeciesCount', makeElement()],
+    ['heroGroupCount', makeElement()],
+  ]);
+
+  global.window = {
+    __TAPANTI_DISABLE_AUTO_BOOTSTRAP__: true,
+    localStorage: {
+      getItem() {
+        return null;
+      },
+      setItem() {},
+    },
+  };
+
+  global.document = {
+    getElementById(id) {
+      return elements.get(id);
+    },
+    querySelectorAll() {
+      return [];
+    },
+    createElement() {
+      return { value: '', textContent: '' };
+    },
+  };
+
+  global.fetch = async () => ({
+    ok: true,
+    json: async () => [makeSpeciesRecord({ imageUrl: 'https://example.com/base.jpg', publicImageUrl: 'https://example.com/seed-public.jpg' })],
+  });
+
+  delete require.cache[require.resolve('./app.js')];
+  const app = require('./app.js');
+  await app.bootstrap();
+
+  app.handleUrlSave('duellmanohyla-rufioculis', 'https://example.com/custom.jpg');
+  app.handleUrlSave('duellmanohyla-rufioculis', ' ');
+
+  assert.match(elements.get('speciesGrid').innerHTML, /https:\/\/example\.com\/seed-public\.jpg/);
 });

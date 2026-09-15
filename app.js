@@ -265,9 +265,11 @@ function mergeSpeciesWithOverrides(seedSpecies, overrides) {
     const overrideUrl = sanitizeUrl(override?.publicImageUrl);
     const seedPublicImageUrl = sanitizeUrl(species.publicImageUrl);
     const seedImageUrl = sanitizeUrl(species.imageUrl);
+    const basePublicImageUrl = seedPublicImageUrl || seedImageUrl;
     return {
       ...species,
-      publicImageUrl: override?.cleared === true ? seedImageUrl : overrideUrl || seedPublicImageUrl || seedImageUrl,
+      basePublicImageUrl,
+      publicImageUrl: override?.cleared === true ? basePublicImageUrl : overrideUrl || basePublicImageUrl,
     };
   });
 }
@@ -490,7 +492,7 @@ function handleUrlSave(speciesId, rawValue) {
   if (!trimmed) {
     persistSpeciesUrl(speciesId, "");
     delete state.draftUrlById[speciesId];
-    species.publicImageUrl = species.imageUrl;
+    species.publicImageUrl = species.basePublicImageUrl || species.imageUrl;
     state.feedbackById[speciesId] = {
       type: "success",
       message: "Se restauró la imagen de referencia de la ficha.",
