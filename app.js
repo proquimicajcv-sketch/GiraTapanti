@@ -10,6 +10,7 @@ const state = {
   species: [],
   feedbackById: {},
   draftUrlById: {},
+  eventsBound: false,
 };
 
 const elements = {
@@ -249,7 +250,6 @@ function mergeSpeciesWithOverrides(seedSpecies, overrides) {
     return {
       ...species,
       publicImageUrl: overrideUrl || species.publicImageUrl || species.imageUrl,
-      placeholderUrl: createPlaceholderDataUrl(species),
     };
   });
 }
@@ -273,6 +273,9 @@ function populateFilters() {
   appendOptions(elements.groupFilter, uniqueSortedValues(state.species.map((item) => item.groupLabel)));
   appendOptions(elements.familyFilter, uniqueSortedValues(state.species.map((item) => item.family)));
   appendOptions(elements.statusFilter, uniqueSortedValues(state.species.map((item) => item.status)));
+  elements.groupFilter.value = state.group;
+  elements.familyFilter.value = state.family;
+  elements.statusFilter.value = state.status;
 }
 
 function matchesFilters(species) {
@@ -321,7 +324,7 @@ function renderError(message) {
 
 function renderSpeciesCard(species) {
   const currentImage = sanitizeUrl(species.publicImageUrl || species.imageUrl);
-  const imageSrc = currentImage || species.placeholderUrl;
+  const imageSrc = currentImage || createPlaceholderDataUrl(species);
   const hasOpenImage = Boolean(currentImage);
   const extraSourceLink = sanitizeUrl(species.specUrl);
   const iNatLink = sanitizeUrl(species.inatUrl);
@@ -493,6 +496,8 @@ function resetFilters() {
 }
 
 function bindEvents() {
+  if (state.eventsBound) return;
+
   elements.searchInput.addEventListener("input", () => {
     state.search = elements.searchInput.value.trim().toLocaleLowerCase("es");
     render();
@@ -514,6 +519,7 @@ function bindEvents() {
   });
 
   elements.resetFiltersButton.addEventListener("click", resetFilters);
+  state.eventsBound = true;
 }
 
 async function bootstrap() {
