@@ -19,7 +19,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Duellmanohyla%20rufioculis",
     "specUrl": "https://www.gbif.org/species/search?q=Duellmanohyla%20rufioculis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 1
   },
   {
     "id": "bolitoglossa-epimela",
@@ -41,7 +42,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bolitoglossa%20epimela",
     "specUrl": "https://www.gbif.org/species/search?q=Bolitoglossa%20epimela",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 2
   },
   {
     "id": "diasporus-hylaeformis",
@@ -63,7 +65,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Diasporus%20hylaeformis",
     "specUrl": "https://www.gbif.org/species/search?q=Diasporus%20hylaeformis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 3
   },
   {
     "id": "espadarana-prosoblepon",
@@ -85,7 +88,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Espadarana%20prosoblepon",
     "specUrl": "https://www.gbif.org/species/search?q=Espadarana%20prosoblepon",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 4
   },
   {
     "id": "isthmohyla-pictipes",
@@ -107,7 +111,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Isthmohyla%20pictipes",
     "specUrl": "https://www.gbif.org/species/search?q=Isthmohyla%20pictipes",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 5
   },
   {
     "id": "craugastor-crassidigitus",
@@ -129,7 +134,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Craugastor%20crassidigitus",
     "specUrl": "https://www.gbif.org/species/search?q=Craugastor%20crassidigitus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 6
   },
   {
     "id": "duellmanohyla-uranochroa",
@@ -151,7 +157,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Duellmanohyla%20uranochroa",
     "specUrl": "https://www.gbif.org/species/search?q=Duellmanohyla%20uranochroa",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 7
   },
   {
     "id": "hyalinobatrachium-fleischmanni",
@@ -173,7 +180,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Hyalinobatrachium%20fleischmanni",
     "specUrl": "https://www.gbif.org/species/search?q=Hyalinobatrachium%20fleischmanni",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 8
   },
   {
     "id": "sachatamia-albomaculata",
@@ -195,7 +203,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sachatamia%20albomaculata",
     "specUrl": "https://www.gbif.org/species/search?q=Sachatamia%20albomaculata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 9
   },
   {
     "id": "craugastor-stejnegerianus",
@@ -217,7 +226,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Craugastor%20stejnegerianus",
     "specUrl": "https://www.gbif.org/species/search?q=Craugastor%20stejnegerianus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 10
   },
   {
     "id": "craugastor-underwoodi",
@@ -239,7 +249,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Craugastor%20underwoodi",
     "specUrl": "https://www.gbif.org/species/search?q=Craugastor%20underwoodi",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 11
   },
   {
     "id": "pristimantis-cerasinus",
@@ -248,8 +259,8 @@
     "commonName": "Rana de lluvia de ojos de cereza",
     "group": "anfibio",
     "groupLabel": "Anfibio",
-    "family": "Craugastoridae",
-    "badge": "Anfibio · Craugastoridae",
+    "family": "Strabomantidae",
+    "badge": "Anfibio · Strabomantidae",
     "badgeClass": "b-amphibia",
     "status": "PREOCUPACIÓN MENOR (LC)",
     "autoridad": "Nombre científico compilado para el catálogo Tapantí #12 a partir del listado curado y fuentes especializadas de referencia enlazadas para Pristimantis cerasinus.",
@@ -261,7 +272,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pristimantis%20cerasinus",
     "specUrl": "https://www.gbif.org/species/search?q=Pristimantis%20cerasinus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 12
   },
   {
     "id": "pristimantis-cruentus",
@@ -270,8 +282,8 @@
     "commonName": "Rana de lluvia ensangrentada",
     "group": "anfibio",
     "groupLabel": "Anfibio",
-    "family": "Craugastoridae",
-    "badge": "Anfibio · Craugastoridae",
+    "family": "Strabomantidae",
+    "badge": "Anfibio · Strabomantidae",
     "badgeClass": "b-amphibia",
     "status": "PREOCUPACIÓN MENOR (LC)",
     "autoridad": "Nombre científico compilado para el catálogo Tapantí #13 a partir del listado curado y fuentes especializadas de referencia enlazadas para Pristimantis cruentus.",
@@ -283,7 +295,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pristimantis%20cruentus",
     "specUrl": "https://www.gbif.org/species/search?q=Pristimantis%20cruentus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 13
   },
   {
     "id": "incilius-coniferus",
@@ -305,7 +318,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Incilius%20coniferus",
     "specUrl": "https://www.gbif.org/species/search?q=Incilius%20coniferus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 14
   },
   {
     "id": "lithobates-warszewitschii",
@@ -327,7 +341,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Lithobates%20warszewitschii",
     "specUrl": "https://www.gbif.org/species/search?q=Lithobates%20warszewitschii",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 15
   },
   {
     "id": "bolitoglossa-colonnea",
@@ -349,7 +364,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bolitoglossa%20colonnea",
     "specUrl": "https://www.gbif.org/species/search?q=Bolitoglossa%20colonnea",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 16
   },
   {
     "id": "bolitoglossa-pesrubra",
@@ -371,7 +387,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bolitoglossa%20pesrubra",
     "specUrl": "https://www.gbif.org/species/search?q=Bolitoglossa%20pesrubra",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 17
   },
   {
     "id": "bolitoglossa-subpalmata",
@@ -393,7 +410,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bolitoglossa%20subpalmata",
     "specUrl": "https://www.gbif.org/species/search?q=Bolitoglossa%20subpalmata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 18
   },
   {
     "id": "nototriton-tapanti",
@@ -415,7 +433,8 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Nototriton%20tapanti",
     "specUrl": "https://www.gbif.org/species/search?q=Nototriton%20tapanti",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 19
   },
   {
     "id": "oedipina-uniformis",
@@ -437,11 +456,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Oedipina%20uniformis",
     "specUrl": "https://www.gbif.org/species/search?q=Oedipina%20uniformis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 20
   },
   {
     "id": "bothriechis-nigroviridis",
-    "catalogNumber": 26,
+    "catalogNumber": 21,
     "sciName": "Bothriechis nigroviridis",
     "commonName": "Toboba de árbol / Víbora moteada",
     "group": "reptil",
@@ -459,11 +479,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bothriechis%20nigroviridis",
     "specUrl": "https://www.gbif.org/species/search?q=Bothriechis%20nigroviridis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 26
   },
   {
     "id": "bothriechis-lateralis",
-    "catalogNumber": 27,
+    "catalogNumber": 22,
     "sciName": "Bothriechis lateralis",
     "commonName": "Lora venenosa de montaña",
     "group": "reptil",
@@ -481,11 +502,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bothriechis%20lateralis",
     "specUrl": "https://www.gbif.org/species/search?q=Bothriechis%20lateralis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 27
   },
   {
     "id": "metlapilcoatlus-mexicanus",
-    "catalogNumber": 28,
+    "catalogNumber": 23,
     "sciName": "Metlapilcoatlus mexicanus",
     "commonName": "Mano de piedra",
     "group": "reptil",
@@ -503,11 +525,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Metlapilcoatlus%20mexicanus",
     "specUrl": "https://www.gbif.org/species/search?q=Metlapilcoatlus%20mexicanus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 28
   },
   {
     "id": "bothrops-asper",
-    "catalogNumber": 29,
+    "catalogNumber": 24,
     "sciName": "Bothrops asper",
     "commonName": "Bothrops asper",
     "group": "reptil",
@@ -525,11 +548,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bothrops%20asper",
     "specUrl": "https://www.gbif.org/species/search?q=Bothrops%20asper",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 29
   },
   {
     "id": "dipsas-articulata",
-    "catalogNumber": 30,
+    "catalogNumber": 25,
     "sciName": "Dipsas articulata",
     "commonName": "Caracolera bandeada",
     "group": "reptil",
@@ -547,11 +571,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Dipsas%20articulata",
     "specUrl": "https://www.gbif.org/species/search?q=Dipsas%20articulata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 30
   },
   {
     "id": "ninia-celata",
-    "catalogNumber": 31,
+    "catalogNumber": 26,
     "sciName": "Ninia celata",
     "commonName": "Culebra de café montañera",
     "group": "reptil",
@@ -569,11 +594,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Ninia%20celata",
     "specUrl": "https://www.gbif.org/species/search?q=Ninia%20celata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 31
   },
   {
     "id": "chironius-grandisquamis",
-    "catalogNumber": 32,
+    "catalogNumber": 27,
     "sciName": "Chironius grandisquamis",
     "commonName": "Culebra ratonera verde de montaña",
     "group": "reptil",
@@ -591,11 +617,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Chironius%20grandisquamis",
     "specUrl": "https://www.gbif.org/species/search?q=Chironius%20grandisquamis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 32
   },
   {
     "id": "geophis-brachycephalus",
-    "catalogNumber": 33,
+    "catalogNumber": 28,
     "sciName": "Geophis brachycephalus",
     "commonName": "Culebra de tierra de cabeza corta",
     "group": "reptil",
@@ -613,11 +640,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Geophis%20brachycephalus",
     "specUrl": "https://www.gbif.org/species/search?q=Geophis%20brachycephalus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 33
   },
   {
     "id": "imantodes-cenchoa",
-    "catalogNumber": 34,
+    "catalogNumber": 29,
     "sciName": "Imantodes cenchoa",
     "commonName": "Culebra bejuquilla / Cordoncillo",
     "group": "reptil",
@@ -635,11 +663,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Imantodes%20cenchoa",
     "specUrl": "https://www.gbif.org/species/search?q=Imantodes%20cenchoa",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 34
   },
   {
     "id": "sibon-nebulatus",
-    "catalogNumber": 35,
+    "catalogNumber": 30,
     "sciName": "Sibon nebulatus",
     "commonName": "Caracolera jaspeada",
     "group": "reptil",
@@ -657,11 +686,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sibon%20nebulatus",
     "specUrl": "https://www.gbif.org/species/search?q=Sibon%20nebulatus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 35
   },
   {
     "id": "anolis-tropidolepis",
-    "catalogNumber": 36,
+    "catalogNumber": 31,
     "sciName": "Anolis tropidolepis",
     "commonName": "Anolis de montaña de quillas grandes",
     "group": "reptil",
@@ -679,11 +709,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Anolis%20tropidolepis",
     "specUrl": "https://www.gbif.org/species/search?q=Anolis%20tropidolepis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 36
   },
   {
     "id": "anolis-altae",
-    "catalogNumber": 37,
+    "catalogNumber": 32,
     "sciName": "Anolis altae",
     "commonName": "Anolis de bosque lluvioso de altura",
     "group": "reptil",
@@ -701,11 +732,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Anolis%20altae",
     "specUrl": "https://www.gbif.org/species/search?q=Anolis%20altae",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 37
   },
   {
     "id": "anolis-vociferans",
-    "catalogNumber": 38,
+    "catalogNumber": 33,
     "sciName": "Anolis vociferans",
     "commonName": "Anolis de musgo de Talamanca",
     "group": "reptil",
@@ -723,11 +755,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Anolis%20vociferans",
     "specUrl": "https://www.gbif.org/species/search?q=Anolis%20vociferans",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 38
   },
   {
     "id": "celestus-montanus",
-    "catalogNumber": 39,
+    "catalogNumber": 34,
     "sciName": "Celestus montanus",
     "commonName": "Lagartija escorpión de bosque nuboso",
     "group": "reptil",
@@ -745,11 +778,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Celestus%20montanus",
     "specUrl": "https://www.gbif.org/species/search?q=Celestus%20montanus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 39
   },
   {
     "id": "diploglossus-bilobatus",
-    "catalogNumber": 40,
+    "catalogNumber": 35,
     "sciName": "Diploglossus bilobatus",
     "commonName": "Galliwasp de Talamanca",
     "group": "reptil",
@@ -767,11 +801,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Diploglossus%20bilobatus",
     "specUrl": "https://www.gbif.org/species/search?q=Diploglossus%20bilobatus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 40
   },
   {
     "id": "sceloporus-malachiticus",
-    "catalogNumber": 41,
+    "catalogNumber": 36,
     "sciName": "Sceloporus malachiticus",
     "commonName": "Lagartija espinosa esmeralda",
     "group": "reptil",
@@ -789,11 +824,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sceloporus%20malachiticus",
     "specUrl": "https://www.gbif.org/species/search?q=Sceloporus%20malachiticus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 41
   },
   {
     "id": "micrurus-nigrocinctus",
-    "catalogNumber": 42,
+    "catalogNumber": 37,
     "sciName": "Micrurus nigrocinctus",
     "commonName": "Coral verdadera centroamericana",
     "group": "reptil",
@@ -811,11 +847,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Micrurus%20nigrocinctus",
     "specUrl": "https://www.gbif.org/species/search?q=Micrurus%20nigrocinctus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 42
   },
   {
     "id": "micrurus-mipartitus",
-    "catalogNumber": 43,
+    "catalogNumber": 38,
     "sciName": "Micrurus mipartitus",
     "commonName": "Coral gargantilla / Rabo de ají",
     "group": "reptil",
@@ -833,11 +870,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Micrurus%20mipartitus",
     "specUrl": "https://www.gbif.org/species/search?q=Micrurus%20mipartitus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 43
   },
   {
     "id": "erythrolamprus-mimus",
-    "catalogNumber": 44,
+    "catalogNumber": 39,
     "sciName": "Erythrolamprus mimus",
     "commonName": "Falsa coral de montaña",
     "group": "reptil",
@@ -855,11 +893,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Erythrolamprus%20mimus",
     "specUrl": "https://www.gbif.org/species/search?q=Erythrolamprus%20mimus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 44
   },
   {
     "id": "oxybelis-brevirostris",
-    "catalogNumber": 45,
+    "catalogNumber": 40,
     "sciName": "Oxybelis brevirostris",
     "commonName": "Bejuquilla de montaña de hocico corto",
     "group": "reptil",
@@ -877,11 +916,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Oxybelis%20brevirostris",
     "specUrl": "https://www.gbif.org/species/search?q=Oxybelis%20brevirostris",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 45
   },
   {
     "id": "tapirus-bairdii",
-    "catalogNumber": 51,
+    "catalogNumber": 41,
     "sciName": "Tapirus bairdii",
     "commonName": "Danta / Tapir centroamericano",
     "group": "mamifero",
@@ -899,11 +939,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Tapirus%20bairdii",
     "specUrl": "https://www.gbif.org/species/search?q=Tapirus%20bairdii",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 51
   },
   {
     "id": "leopardus-pardalis",
-    "catalogNumber": 52,
+    "catalogNumber": 42,
     "sciName": "Leopardus pardalis",
     "commonName": "Manigordo / Ocelote",
     "group": "mamifero",
@@ -921,11 +962,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Leopardus%20pardalis",
     "specUrl": "https://www.gbif.org/species/search?q=Leopardus%20pardalis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 52
   },
   {
     "id": "leopardus-wiedii",
-    "catalogNumber": 53,
+    "catalogNumber": 43,
     "sciName": "Leopardus wiedii",
     "commonName": "Caucel / Margay",
     "group": "mamifero",
@@ -943,11 +985,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Leopardus%20wiedii",
     "specUrl": "https://www.gbif.org/species/search?q=Leopardus%20wiedii",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 53
   },
   {
     "id": "puma-concolor",
-    "catalogNumber": 54,
+    "catalogNumber": 44,
     "sciName": "Puma concolor",
     "commonName": "Puma / León de montaña",
     "group": "mamifero",
@@ -965,11 +1008,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Puma%20concolor",
     "specUrl": "https://www.gbif.org/species/search?q=Puma%20concolor",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 54
   },
   {
     "id": "nasua-narica",
-    "catalogNumber": 55,
+    "catalogNumber": 45,
     "sciName": "Nasua narica",
     "commonName": "Pizote / Coatí de nariz blanca",
     "group": "mamifero",
@@ -987,11 +1031,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Nasua%20narica",
     "specUrl": "https://www.gbif.org/species/search?q=Nasua%20narica",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 55
   },
   {
     "id": "procyon-lotor",
-    "catalogNumber": 56,
+    "catalogNumber": 46,
     "sciName": "Procyon lotor",
     "commonName": "Mapache norteño de montaña",
     "group": "mamifero",
@@ -1009,11 +1054,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Procyon%20lotor",
     "specUrl": "https://www.gbif.org/species/search?q=Procyon%20lotor",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 56
   },
   {
     "id": "eira-barbara",
-    "catalogNumber": 57,
+    "catalogNumber": 47,
     "sciName": "Eira barbara",
     "commonName": "Tolomuco / Tayra",
     "group": "mamifero",
@@ -1031,11 +1077,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Eira%20barbara",
     "specUrl": "https://www.gbif.org/species/search?q=Eira%20barbara",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 57
   },
   {
     "id": "dasyprocta-punctata",
-    "catalogNumber": 58,
+    "catalogNumber": 48,
     "sciName": "Dasyprocta punctata",
     "commonName": "Guatusa / Agutí centroamericano",
     "group": "mamifero",
@@ -1053,11 +1100,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Dasyprocta%20punctata",
     "specUrl": "https://www.gbif.org/species/search?q=Dasyprocta%20punctata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 58
   },
   {
     "id": "cuniculus-paca",
-    "catalogNumber": 59,
+    "catalogNumber": 49,
     "sciName": "Cuniculus paca",
     "commonName": "Tepezcuintle / Paca",
     "group": "mamifero",
@@ -1075,11 +1123,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Cuniculus%20paca",
     "specUrl": "https://www.gbif.org/species/search?q=Cuniculus%20paca",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 59
   },
   {
     "id": "choloepus-hoffmanni",
-    "catalogNumber": 60,
+    "catalogNumber": 50,
     "sciName": "Choloepus hoffmanni",
     "commonName": "Perezoso de dos dedos",
     "group": "mamifero",
@@ -1097,11 +1146,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Choloepus%20hoffmanni",
     "specUrl": "https://www.gbif.org/species/search?q=Choloepus%20hoffmanni",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 60
   },
   {
     "id": "mazama-temama",
-    "catalogNumber": 61,
+    "catalogNumber": 51,
     "sciName": "Mazama temama",
     "commonName": "Cabro de monte / Corzuela roja",
     "group": "mamifero",
@@ -1119,11 +1169,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Mazama%20temama",
     "specUrl": "https://www.gbif.org/species/search?q=Mazama%20temama",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 61
   },
   {
     "id": "pecari-tajacu",
-    "catalogNumber": 62,
+    "catalogNumber": 52,
     "sciName": "Pecari tajacu",
     "commonName": "Saíno / Pecarí de collar",
     "group": "mamifero",
@@ -1141,11 +1192,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pecari%20tajacu",
     "specUrl": "https://www.gbif.org/species/search?q=Pecari%20tajacu",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 62
   },
   {
     "id": "alouatta-palliata",
-    "catalogNumber": 63,
+    "catalogNumber": 53,
     "sciName": "Alouatta palliata",
     "commonName": "Mono congo / Aullador",
     "group": "mamifero",
@@ -1163,11 +1215,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Alouatta%20palliata",
     "specUrl": "https://www.gbif.org/species/search?q=Alouatta%20palliata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 63
   },
   {
     "id": "cebus-imitator",
-    "catalogNumber": 64,
+    "catalogNumber": 54,
     "sciName": "Cebus imitator",
     "commonName": "Mono cariblanco panameño",
     "group": "mamifero",
@@ -1185,11 +1238,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Cebus%20imitator",
     "specUrl": "https://www.gbif.org/species/search?q=Cebus%20imitator",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 64
   },
   {
     "id": "bassaricyon-gabbii",
-    "catalogNumber": 65,
+    "catalogNumber": 55,
     "sciName": "Bassaricyon gabbii",
     "commonName": "Olingo de Gabbi",
     "group": "mamifero",
@@ -1207,11 +1261,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bassaricyon%20gabbii",
     "specUrl": "https://www.gbif.org/species/search?q=Bassaricyon%20gabbii",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 65
   },
   {
     "id": "potos-flavus",
-    "catalogNumber": 66,
+    "catalogNumber": 56,
     "sciName": "Potos flavus",
     "commonName": "Martica / Kinkajú",
     "group": "mamifero",
@@ -1229,11 +1284,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Potos%20flavus",
     "specUrl": "https://www.gbif.org/species/search?q=Potos%20flavus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 66
   },
   {
     "id": "didelphis-marsupialis",
-    "catalogNumber": 67,
+    "catalogNumber": 57,
     "sciName": "Didelphis marsupialis",
     "commonName": "Zorro pelón / Zarigüeya común",
     "group": "mamifero",
@@ -1251,11 +1307,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Didelphis%20marsupialis",
     "specUrl": "https://www.gbif.org/species/search?q=Didelphis%20marsupialis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 67
   },
   {
     "id": "tamandua-mexicana",
-    "catalogNumber": 68,
+    "catalogNumber": 58,
     "sciName": "Tamandua mexicana",
     "commonName": "Oso colmenero / Tamandúa",
     "group": "mamifero",
@@ -1273,11 +1330,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Tamandua%20mexicana",
     "specUrl": "https://www.gbif.org/species/search?q=Tamandua%20mexicana",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 68
   },
   {
     "id": "sylvilagus-dicei",
-    "catalogNumber": 69,
+    "catalogNumber": 59,
     "sciName": "Sylvilagus dicei",
     "commonName": "Conejo de monte de Dice / Talamanca",
     "group": "mamifero",
@@ -1295,11 +1353,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sylvilagus%20dicei",
     "specUrl": "https://www.gbif.org/species/search?q=Sylvilagus%20dicei",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 69
   },
   {
     "id": "heteromys-desmarestianus",
-    "catalogNumber": 70,
+    "catalogNumber": 60,
     "sciName": "Heteromys desmarestianus",
     "commonName": "Ratón de campo espinoso",
     "group": "mamifero",
@@ -1317,11 +1376,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Heteromys%20desmarestianus",
     "specUrl": "https://www.gbif.org/species/search?q=Heteromys%20desmarestianus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 70
   },
   {
     "id": "pharomachrus-mocinno",
-    "catalogNumber": 76,
+    "catalogNumber": 61,
     "sciName": "Pharomachrus mocinno",
     "commonName": "Quetzal resplandeciente",
     "group": "ave",
@@ -1339,11 +1399,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pharomachrus%20mocinno",
     "specUrl": "https://xeno-canto.org/explore?query=Pharomachrus%20mocinno",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 76
   },
   {
     "id": "momotus-lessonii",
-    "catalogNumber": 77,
+    "catalogNumber": 62,
     "sciName": "Momotus lessonii",
     "commonName": "Momoto de Lesson / Pájaro bobo",
     "group": "ave",
@@ -1361,11 +1422,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Momotus%20lessonii",
     "specUrl": "https://xeno-canto.org/explore?query=Momotus%20lessonii",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 77
   },
   {
     "id": "aulacorhynchus-prasinus",
-    "catalogNumber": 78,
+    "catalogNumber": 63,
     "sciName": "Aulacorhynchus prasinus",
     "commonName": "Tucancillo verde",
     "group": "ave",
@@ -1383,11 +1445,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Aulacorhynchus%20prasinus",
     "specUrl": "https://xeno-canto.org/explore?query=Aulacorhynchus%20prasinus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 78
   },
   {
     "id": "procnias-tricarunculatus",
-    "catalogNumber": 79,
+    "catalogNumber": 64,
     "sciName": "Procnias tricarunculatus",
     "commonName": "Pájaro campana",
     "group": "ave",
@@ -1405,11 +1468,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Procnias%20tricarunculatus",
     "specUrl": "https://xeno-canto.org/explore?query=Procnias%20tricarunculatus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 79
   },
   {
     "id": "eugenes-spectabilis",
-    "catalogNumber": 80,
+    "catalogNumber": 65,
     "sciName": "Eugenes spectabilis",
     "commonName": "Colibrí magnífico de Talamanca",
     "group": "ave",
@@ -1427,11 +1491,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Eugenes%20spectabilis",
     "specUrl": "https://xeno-canto.org/explore?query=Eugenes%20spectabilis",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 80
   },
   {
     "id": "panterpe-insignis",
-    "catalogNumber": 81,
+    "catalogNumber": 66,
     "sciName": "Panterpe insignis",
     "commonName": "Colibrí garganta de fuego",
     "group": "ave",
@@ -1449,11 +1514,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Panterpe%20insignis",
     "specUrl": "https://xeno-canto.org/explore?query=Panterpe%20insignis",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 81
   },
   {
     "id": "catharus-aurantiirostris",
-    "catalogNumber": 82,
+    "catalogNumber": 67,
     "sciName": "Catharus aurantiirostris",
     "commonName": "Zorzal piquinaranja",
     "group": "ave",
@@ -1471,11 +1537,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Catharus%20aurantiirostris",
     "specUrl": "https://xeno-canto.org/explore?query=Catharus%20aurantiirostris",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 82
   },
   {
     "id": "myioborus-torquatus",
-    "catalogNumber": 83,
+    "catalogNumber": 68,
     "sciName": "Myioborus torquatus",
     "commonName": "Candelita collareja",
     "group": "ave",
@@ -1493,11 +1560,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Myioborus%20torquatus",
     "specUrl": "https://xeno-canto.org/explore?query=Myioborus%20torquatus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 83
   },
   {
     "id": "semnornis-frantzii",
-    "catalogNumber": 84,
+    "catalogNumber": 69,
     "sciName": "Semnornis frantzii",
     "commonName": "Barbudo cocora / Capitán de montaña",
     "group": "ave",
@@ -1515,11 +1583,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Semnornis%20frantzii",
     "specUrl": "https://xeno-canto.org/explore?query=Semnornis%20frantzii",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 84
   },
   {
     "id": "campylopterus-hemileucurus",
-    "catalogNumber": 85,
+    "catalogNumber": 70,
     "sciName": "Campylopterus hemileucurus",
     "commonName": "Fandanguero colivioleta",
     "group": "ave",
@@ -1537,11 +1606,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Campylopterus%20hemileucurus",
     "specUrl": "https://xeno-canto.org/explore?query=Campylopterus%20hemileucurus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 85
   },
   {
     "id": "chamaepetes-unicolor",
-    "catalogNumber": 86,
+    "catalogNumber": 71,
     "sciName": "Chamaepetes unicolor",
     "commonName": "Pava negra de montaña",
     "group": "ave",
@@ -1559,11 +1629,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Chamaepetes%20unicolor",
     "specUrl": "https://xeno-canto.org/explore?query=Chamaepetes%20unicolor",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 86
   },
   {
     "id": "turdus-plebejus",
-    "catalogNumber": 87,
+    "catalogNumber": 72,
     "sciName": "Turdus plebejus",
     "commonName": "Mirlo de montaña / Yigüirro de altura",
     "group": "ave",
@@ -1581,11 +1652,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Turdus%20plebejus",
     "specUrl": "https://xeno-canto.org/explore?query=Turdus%20plebejus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 87
   },
   {
     "id": "chlorospingus-ophthalmicus",
-    "catalogNumber": 88,
+    "catalogNumber": 73,
     "sciName": "Chlorospingus ophthalmicus",
     "commonName": "Matorralero común / Tangara de monte",
     "group": "ave",
@@ -1603,11 +1675,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Chlorospingus%20ophthalmicus",
     "specUrl": "https://xeno-canto.org/explore?query=Chlorospingus%20ophthalmicus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 88
   },
   {
     "id": "pygmornis-hermitae",
-    "catalogNumber": 89,
+    "catalogNumber": 74,
     "sciName": "Pygmornis hermitae",
     "commonName": "Ermitaño gorgiestriado",
     "group": "ave",
@@ -1625,11 +1698,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pygmornis%20hermitae",
     "specUrl": "https://xeno-canto.org/explore?query=Pygmornis%20hermitae",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 89
   },
   {
     "id": "coeligena-hemileuca",
-    "catalogNumber": 90,
+    "catalogNumber": 75,
     "sciName": "Coeligena hemileuca",
     "commonName": "Colibrí estelar montañero",
     "group": "ave",
@@ -1647,11 +1721,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Coeligena%20hemileuca",
     "specUrl": "https://xeno-canto.org/explore?query=Coeligena%20hemileuca",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 90
   },
   {
     "id": "touit-costaricensis",
-    "catalogNumber": 91,
+    "catalogNumber": 76,
     "sciName": "Touit costaricensis",
     "commonName": "Periquito alirrojo costarricense",
     "group": "ave",
@@ -1669,11 +1744,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Touit%20costaricensis",
     "specUrl": "https://xeno-canto.org/explore?query=Touit%20costaricensis",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 91
   },
   {
     "id": "cyanolyca-argentigula",
-    "catalogNumber": 92,
+    "catalogNumber": 77,
     "sciName": "Cyanolyca argentigula",
     "commonName": "Chara gorgiplateada / Urraca de montaña",
     "group": "ave",
@@ -1691,11 +1767,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Cyanolyca%20argentigula",
     "specUrl": "https://xeno-canto.org/explore?query=Cyanolyca%20argentigula",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 92
   },
   {
     "id": "zeledonia-coronata",
-    "catalogNumber": 93,
+    "catalogNumber": 78,
     "sciName": "Zeledonia coronata",
     "commonName": "Zeledonia / Reyezuelo de Talamanca",
     "group": "ave",
@@ -1713,11 +1790,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Zeledonia%20coronata",
     "specUrl": "https://xeno-canto.org/explore?query=Zeledonia%20coronata",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 93
   },
   {
     "id": "spizaetus-ornatus",
-    "catalogNumber": 94,
+    "catalogNumber": 79,
     "sciName": "Spizaetus ornatus",
     "commonName": "Águila crestada / Halcón crestado",
     "group": "ave",
@@ -1735,11 +1813,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Spizaetus%20ornatus",
     "specUrl": "https://xeno-canto.org/explore?query=Spizaetus%20ornatus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 94
   },
   {
     "id": "catharus-frantzii",
-    "catalogNumber": 95,
+    "catalogNumber": 80,
     "sciName": "Catharus frantzii",
     "commonName": "Zorzal de Frantzius",
     "group": "ave",
@@ -1757,11 +1836,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Catharus%20frantzii",
     "specUrl": "https://xeno-canto.org/explore?query=Catharus%20frantzii",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 95
   },
   {
     "id": "morpho-peleides",
-    "catalogNumber": 111,
+    "catalogNumber": 81,
     "sciName": "Morpho peleides",
     "commonName": "Mariposa morfo azul",
     "group": "invertebrado",
@@ -1779,11 +1859,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Morpho%20peleides",
     "specUrl": "https://www.gbif.org/species/search?q=Morpho%20peleides",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 111
   },
   {
     "id": "chrysina-chrysargyrea",
-    "catalogNumber": 112,
+    "catalogNumber": 82,
     "sciName": "Chrysina chrysargyrea",
     "commonName": "Escarabajo de plata de Tapantí",
     "group": "invertebrado",
@@ -1801,17 +1882,18 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Chrysina%20chrysargyrea",
     "specUrl": "https://www.gbif.org/species/search?q=Chrysina%20chrysargyrea",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 112
   },
   {
     "id": "dynastes-hercules",
-    "catalogNumber": 113,
+    "catalogNumber": 83,
     "sciName": "Dynastes hercules",
     "commonName": "Escarabajo hércules",
     "group": "invertebrado",
     "groupLabel": "Invertebrado",
-    "family": "Dynastinae",
-    "badge": "Invertebrado · Dynastinae",
+    "family": "Scarabaeidae",
+    "badge": "Invertebrado · Scarabaeidae",
     "badgeClass": "b-invertebrate",
     "status": "REGISTRO DE BIODIVERSIDAD",
     "autoridad": "Nombre científico compilado para el catálogo Tapantí #113 a partir del listado curado y fuentes especializadas de referencia enlazadas para Dynastes hercules.",
@@ -1823,11 +1905,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Dynastes%20hercules",
     "specUrl": "https://www.gbif.org/species/search?q=Dynastes%20hercules",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 113
   },
   {
     "id": "ptychophallus-tapanti",
-    "catalogNumber": 114,
+    "catalogNumber": 84,
     "sciName": "Ptychophallus tapanti",
     "commonName": "Cangrejo de río de Tapantí",
     "group": "invertebrado",
@@ -1845,11 +1928,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Ptychophallus%20tapanti",
     "specUrl": "https://www.gbif.org/species/search?q=Ptychophallus%20tapanti",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 114
   },
   {
     "id": "trichonephila-clavipes",
-    "catalogNumber": 115,
+    "catalogNumber": 85,
     "sciName": "Trichonephila clavipes",
     "commonName": "Araña de seda dorada",
     "group": "invertebrado",
@@ -1867,11 +1951,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Trichonephila%20clavipes",
     "specUrl": "https://www.gbif.org/species/search?q=Trichonephila%20clavipes",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 115
   },
   {
     "id": "atta-cephalotes",
-    "catalogNumber": 116,
+    "catalogNumber": 86,
     "sciName": "Atta cephalotes",
     "commonName": "Atta cephalotes",
     "group": "invertebrado",
@@ -1889,11 +1974,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Atta%20cephalotes",
     "specUrl": "https://www.gbif.org/species/search?q=Atta%20cephalotes",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 116
   },
   {
     "id": "heliconius-cydno",
-    "catalogNumber": 117,
+    "catalogNumber": 87,
     "sciName": "Heliconius cydno",
     "commonName": "Mariposa cartero de montaña",
     "group": "invertebrado",
@@ -1911,11 +1997,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Heliconius%20cydno",
     "specUrl": "https://www.gbif.org/species/search?q=Heliconius%20cydno",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 117
   },
   {
     "id": "paraponera-clavata",
-    "catalogNumber": 118,
+    "catalogNumber": 88,
     "sciName": "Paraponera clavata",
     "commonName": "Paraponera clavata",
     "group": "invertebrado",
@@ -1933,11 +2020,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Paraponera%20clavata",
     "specUrl": "https://www.gbif.org/species/search?q=Paraponera%20clavata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 118
   },
   {
     "id": "caligo-eurilochus",
-    "catalogNumber": 119,
+    "catalogNumber": 89,
     "sciName": "Caligo eurilochus",
     "commonName": "Mariposa búho de bosque nuboso",
     "group": "invertebrado",
@@ -1955,17 +2043,18 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Caligo%20eurilochus",
     "specUrl": "https://www.gbif.org/species/search?q=Caligo%20eurilochus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 119
   },
   {
     "id": "megasoma-elephas",
-    "catalogNumber": 120,
+    "catalogNumber": 90,
     "sciName": "Megasoma elephas",
     "commonName": "Megasoma elephas",
     "group": "invertebrado",
     "groupLabel": "Invertebrado",
-    "family": "Dynastinae",
-    "badge": "Invertebrado · Dynastinae",
+    "family": "Scarabaeidae",
+    "badge": "Invertebrado · Scarabaeidae",
     "badgeClass": "b-invertebrate",
     "status": "REGISTRO DE BIODIVERSIDAD",
     "autoridad": "Nombre científico compilado para el catálogo Tapantí #120 a partir del listado curado y fuentes especializadas de referencia enlazadas para Megasoma elephas.",
@@ -1977,11 +2066,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Megasoma%20elephas",
     "specUrl": "https://www.gbif.org/species/search?q=Megasoma%20elephas",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 120
   },
   {
     "id": "lepanthes-machogaffensis",
-    "catalogNumber": 126,
+    "catalogNumber": 91,
     "sciName": "Lepanthes machogaffensis",
     "commonName": "Orquídea miniatura de Macho Gaff",
     "group": "planta",
@@ -1999,11 +2089,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Lepanthes%20machogaffensis",
     "specUrl": "https://www.gbif.org/species/search?q=Lepanthes%20machogaffensis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 126
   },
   {
     "id": "epidendrum-jorge-warneri",
-    "catalogNumber": 127,
+    "catalogNumber": 92,
     "sciName": "Epidendrum jorge-warneri",
     "commonName": "Orquídea Epidendro de Tapantí",
     "group": "planta",
@@ -2021,11 +2112,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Epidendrum%20jorge-warneri",
     "specUrl": "https://www.gbif.org/species/search?q=Epidendrum%20jorge-warneri",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 127
   },
   {
     "id": "epidendrum-lacustre",
-    "catalogNumber": 128,
+    "catalogNumber": 93,
     "sciName": "Epidendrum lacustre",
     "commonName": "Epidendro gigante de bosque nuboso",
     "group": "planta",
@@ -2043,11 +2135,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Epidendrum%20lacustre",
     "specUrl": "https://www.gbif.org/species/search?q=Epidendrum%20lacustre",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 128
   },
   {
     "id": "masdevallia-striatella",
-    "catalogNumber": 129,
+    "catalogNumber": 94,
     "sciName": "Masdevallia striatella",
     "commonName": "Masdevallia rayada",
     "group": "planta",
@@ -2065,11 +2158,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Masdevallia%20striatella",
     "specUrl": "https://www.gbif.org/species/search?q=Masdevallia%20striatella",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 129
   },
   {
     "id": "sobralia-purpurea",
-    "catalogNumber": 130,
+    "catalogNumber": 95,
     "sciName": "Sobralia purpurea",
     "commonName": "Sobralia púrpura de montaña",
     "group": "planta",
@@ -2087,11 +2181,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sobralia%20purpurea",
     "specUrl": "https://www.gbif.org/species/search?q=Sobralia%20purpurea",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 130
   },
   {
     "id": "platystele-montezumae",
-    "catalogNumber": 131,
+    "catalogNumber": 96,
     "sciName": "Platystele montezumae",
     "commonName": "Orquídea microscópica de Tapantí",
     "group": "planta",
@@ -2109,11 +2204,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Platystele%20montezumae",
     "specUrl": "https://www.gbif.org/species/search?q=Platystele%20montezumae",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 131
   },
   {
     "id": "maxillaria-ringens",
-    "catalogNumber": 132,
+    "catalogNumber": 97,
     "sciName": "Maxillaria ringens",
     "commonName": "Maxilaria amarilla",
     "group": "planta",
@@ -2131,11 +2227,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Maxillaria%20ringens",
     "specUrl": "https://www.gbif.org/species/search?q=Maxillaria%20ringens",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 132
   },
   {
     "id": "gunnera-insignis",
-    "catalogNumber": 133,
+    "catalogNumber": 98,
     "sciName": "Gunnera insignis",
     "commonName": "Sombrilla de pobre",
     "group": "planta",
@@ -2153,11 +2250,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Gunnera%20insignis",
     "specUrl": "https://www.gbif.org/species/search?q=Gunnera%20insignis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 133
   },
   {
     "id": "cyathea-caracasana",
-    "catalogNumber": 134,
+    "catalogNumber": 99,
     "sciName": "Cyathea caracasana",
     "commonName": "Helecho arborescente de Talamanca",
     "group": "planta",
@@ -2175,11 +2273,12 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Cyathea%20caracasana",
     "specUrl": "https://www.gbif.org/species/search?q=Cyathea%20caracasana",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 134
   },
   {
     "id": "werauhia-costaricensis",
-    "catalogNumber": 135,
+    "catalogNumber": 100,
     "sciName": "Werauhia costaricensis",
     "commonName": "Bromelia de montaña costarricense",
     "group": "planta",
@@ -2197,6 +2296,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Werauhia%20costaricensis",
     "specUrl": "https://www.gbif.org/species/search?q=Werauhia%20costaricensis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": ""
+    "imageUrl": "",
+    "sourceCatalogNumber": 135
   }
 ]

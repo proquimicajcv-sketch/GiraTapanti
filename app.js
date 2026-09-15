@@ -234,7 +234,7 @@ function persistSpeciesUrl(speciesId, nextUrl) {
 }
 
 async function loadCatalog() {
-  const response = await fetch(DATA_URL, { cache: "no-store" });
+  const response = await fetch(DATA_URL);
   if (!response.ok) {
     throw new Error(`No se pudo cargar ${DATA_URL} (${response.status})`);
   }
