@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tapanti · Curación de especies</title>
-    <meta name="description" content="Catálogo curado de especies observadas en Tapantí con edición segura de imágenes públicas y persistencia local." />
+    <title>Tapanti · Identificación y curación</title>
+    <meta
+      name="description"
+      content="Catálogo visual de especies de Tapantí con fichas curadas, filtros y edición segura de URL pública."
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -14,17 +17,18 @@
           <p class="eyebrow">Tapanti · identificación y curación</p>
           <h1>Catálogo visual de especies</h1>
           <p class="hero-copy">
-            Revisa fichas botánicas listas para campo, ajusta la URL pública de la imagen de referencia y conserva los cambios en este navegador.
+            Revisa fichas de campo con taxonomía, anatomía, fisiología, etología, curiosidades y conservación.
+            La URL pública de imagen se puede editar y persistir en este navegador.
           </p>
         </div>
         <div class="hero-panel">
           <div>
             <span class="hero-label">Objetivo</span>
-            <strong>Curar evidencia visual y notas descriptivas</strong>
+            <strong id="heroSpeciesCount">Cargando especies…</strong>
           </div>
           <div>
             <span class="hero-label">Persistencia</span>
-            <strong>localStorage seguro por especie</strong>
+            <strong id="heroGroupCount">Preparando grupos…</strong>
           </div>
         </div>
       </header>
@@ -33,7 +37,14 @@
         <section class="toolbar" aria-label="Filtros del catálogo">
           <label class="field search-field">
             <span>Buscar especie</span>
-            <input id="searchInput" type="search" placeholder="Ej. Mimosa, Monstera, helecho..." />
+            <input id="searchInput" type="search" placeholder="Nombre científico, común, familia, anatomía…" />
+          </label>
+
+          <label class="field">
+            <span>Grupo</span>
+            <select id="groupFilter">
+              <option value="all">Todos</option>
+            </select>
           </label>
 
           <label class="field">
@@ -52,13 +63,20 @@
         </section>
 
         <section class="results-bar" aria-live="polite">
-          <p id="resultsSummary"></p>
+          <p id="resultsSummary">Cargando catálogo…</p>
           <button id="resetFiltersButton" class="ghost-button" type="button">Restablecer filtros</button>
         </section>
 
         <section id="speciesGrid" class="species-grid" aria-label="Fichas de especies"></section>
       </main>
     </div>
+
+    <template id="emptyStateTemplate">
+      <article class="empty-state">
+        <h2>Sin resultados</h2>
+        <p>No hay especies que coincidan con los filtros actuales. Restablece los filtros para volver al catálogo completo.</p>
+      </article>
+    </template>
 
     <script src="./app.js"></script>
   </body>
