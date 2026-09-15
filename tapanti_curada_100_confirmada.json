@@ -1,1 +1,20 @@
-
+{
+  "id": "duellmanohyla-rufioculis",
+  "sciName": "Duellmanohyla rufioculis",
+  "commonName": "Rana de ojos rojizos de torrente",
+  "group": "anuro",
+  "badge": "Anura · Hylidae",
+  "badgeClass": "b-amphibia",
+  "autoridad": "Taylor, 1952 (como Hyla rufioculis); transferida a Duellmanohyla por Campbell & Smith (1992)",
+  "anatomia": "LHC 25-42 mm; iris rojo carmesí brillante; línea blanca nítida continua en labio superior y flancos; dorso bronce a verde esmeralda.",
+  "fisiologia": "Piel permeable con intercambio osmótico activo en aguas oligotróficas; termorregulación pasiva dependiente de humedad >90%.",
+  "etologia": "Nocturna y riparia; machos cantan sobre helechos a 0.5-2 m sobre rápidos; puestas adheridas en haz de hojas sobre agua corriente.",
+  "curiosidad": "Su canto metálico en 3.0 kHz corta el ruido blanco ensordecedor producido por las cascadas del río Grande de Orosi.",
+  "conservacion": "Preocupación Menor (LC) · Endémica de Costa Rica",
+  "inatUrl": "https://www.inaturalist.org/taxa/duellmanohyla-rufioculis",
+  "specUrl": "https://xeno-canto.org/explore?query=Duellmanohyla+rufioculis",
+  "specLabel": "Xeno-canto (Bioacústica)",
+  "image": "/images/species/duellmanohyla-rufioculis.jpg",
+  "imageFull": "/images/species/duellmanohyla-rufioculis-full.jpg",
+  "observado": false
+}
