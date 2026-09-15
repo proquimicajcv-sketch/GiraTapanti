@@ -203,7 +203,13 @@ function readStoredOverrides() {
 }
 
 function readStoredObject(key) {
-  const saved = window.localStorage.getItem(key);
+  let saved;
+  try {
+    saved = window.localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+
   if (!saved) return null;
 
   try {
@@ -227,7 +233,11 @@ function persistSpeciesUrl(speciesId, nextUrl) {
     delete overrides[speciesId];
   }
 
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(overrides));
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(overrides));
+  } catch {
+    /* no-op: continue without persistence when storage is unavailable */
+  }
 }
 
 async function loadCatalog() {
@@ -258,21 +268,30 @@ function uniqueSortedValues(values) {
   return [...new Set(values.filter(Boolean))].sort((left, right) => left.localeCompare(right, "es"));
 }
 
-function appendOptions(selectElement, values) {
+function appendOptions(selectElement, options) {
   selectElement.innerHTML = selectElement.querySelector("option")?.outerHTML || "";
 
-  values.forEach((value) => {
+  options.forEach((optionData) => {
     const option = document.createElement("option");
-    option.value = value;
-    option.textContent = value;
+    option.value = optionData.value;
+    option.textContent = optionData.label;
     selectElement.append(option);
   });
 }
 
 function populateFilters() {
-  appendOptions(elements.groupFilter, uniqueSortedValues(state.species.map((item) => item.groupLabel)));
-  appendOptions(elements.familyFilter, uniqueSortedValues(state.species.map((item) => item.family)));
-  appendOptions(elements.statusFilter, uniqueSortedValues(state.species.map((item) => item.status)));
+  const groupOptions = [...new Map(state.species.map((item) => [item.group, item.groupLabel])).entries()]
+    .map(([value, label]) => ({ value, label }))
+    .sort((left, right) => left.label.localeCompare(right.label, "es"));
+  appendOptions(elements.groupFilter, groupOptions);
+  appendOptions(
+    elements.familyFilter,
+    uniqueSortedValues(state.species.map((item) => item.family)).map((value) => ({ value, label: value })),
+  );
+  appendOptions(
+    elements.statusFilter,
+    uniqueSortedValues(state.species.map((item) => item.status)).map((value) => ({ value, label: value })),
+  );
   elements.groupFilter.value = state.group;
   elements.familyFilter.value = state.family;
   elements.statusFilter.value = state.status;
@@ -299,7 +318,7 @@ function matchesFilters(species) {
     .toLocaleLowerCase("es");
 
   if (state.search && !haystack.includes(state.search)) return false;
-  if (state.group !== "all" && species.groupLabel !== state.group) return false;
+  if (state.group !== "all" && species.group !== state.group) return false;
   if (state.family !== "all" && species.family !== state.family) return false;
   if (state.status !== "all" && species.status !== state.status) return false;
   return true;
