@@ -197,6 +197,11 @@ function readStoredOverrides() {
     const publicImageUrl = sanitizeUrl(value && value.publicImageUrl);
     if (publicImageUrl) {
       accumulator[id] = { publicImageUrl };
+      return accumulator;
+    }
+
+    if (value && value.cleared === true) {
+      accumulator[id] = { cleared: true };
     }
     return accumulator;
   }, {});
@@ -230,7 +235,7 @@ function persistSpeciesUrl(speciesId, nextUrl) {
   if (nextUrl) {
     overrides[speciesId] = { publicImageUrl: nextUrl };
   } else {
-    delete overrides[speciesId];
+    overrides[speciesId] = { cleared: true };
   }
 
   try {
@@ -256,16 +261,20 @@ async function loadCatalog() {
 
 function mergeSpeciesWithOverrides(seedSpecies, overrides) {
   return seedSpecies.map((species) => {
-    const overrideUrl = sanitizeUrl(overrides[species.id]?.publicImageUrl);
+    const override = overrides[species.id];
+    const overrideUrl = sanitizeUrl(override?.publicImageUrl);
+    const seedPublicImageUrl = sanitizeUrl(species.publicImageUrl);
+    const seedImageUrl = sanitizeUrl(species.imageUrl);
     return {
       ...species,
-      publicImageUrl: overrideUrl || species.publicImageUrl || species.imageUrl,
+      publicImageUrl: override?.cleared === true ? seedImageUrl : overrideUrl || seedPublicImageUrl || seedImageUrl,
     };
   });
 }
 
 function uniqueSortedValues(values) {
-  return [...new Set(values.filter(Boolean))].sort((left, right) => left.localeCompare(right, "es"));
+  return [...new Set(values.filter((value) => value !== undefined && value !== null && value !== "").map((value) => String(value)))]
+    .sort((left, right) => left.localeCompare(right, "es"));
 }
 
 function appendOptions(selectElement, options) {
@@ -368,6 +377,9 @@ function renderSpeciesCard(species) {
   const currentImage = sanitizeUrl(species.publicImageUrl || species.imageUrl);
   const imageSrc = currentImage || createPlaceholderDataUrl(species);
   const hasOpenImage = Boolean(currentImage);
+  const openImageAction = hasOpenImage
+    ? `<a class="open-link" href="${escapeHtml(currentImage)}" target="_blank" rel="noopener noreferrer">Abrir imagen</a>`
+    : '<span class="open-link is-disabled" aria-disabled="true">Abrir imagen</span>';
   const extraSourceLink = sanitizeUrl(species.specUrl);
   const iNatLink = sanitizeUrl(species.inatUrl);
 
@@ -408,7 +420,7 @@ function renderSpeciesCard(species) {
         </form>
 
         <div class="card-links">
-          <a class="open-link${hasOpenImage ? "" : " is-disabled"}" href="${escapeHtml(hasOpenImage ? currentImage : "#")}" target="_blank" rel="noopener noreferrer" ${hasOpenImage ? "" : 'aria-disabled="true" tabindex="-1"'}>Abrir imagen</a>
+          ${openImageAction}
           ${iNatLink ? `<a class="open-link" href="${escapeHtml(iNatLink)}" target="_blank" rel="noopener noreferrer">iNaturalist</a>` : ""}
           ${extraSourceLink ? `<a class="open-link" href="${escapeHtml(extraSourceLink)}" target="_blank" rel="noopener noreferrer">${escapeHtml(species.specLabel || "Fuente")}</a>` : ""}
         </div>
@@ -508,12 +520,12 @@ function handleUrlSave(speciesId, rawValue) {
 }
 
 function updateHeroMeta() {
-  const visibleGroups = uniqueSortedValues(state.species.map((item) => item.groupLabel));
+  const catalogGroups = uniqueSortedValues(state.species.map((item) => item.groupLabel));
   if (elements.heroSpeciesCount) {
     elements.heroSpeciesCount.textContent = `${state.species.length} fichas curadas para identificación visual`;
   }
   if (elements.heroGroupCount) {
-    elements.heroGroupCount.textContent = `Guardado local de URL por especie · ${visibleGroups.length} grupos`;
+    elements.heroGroupCount.textContent = `Guardado local de URL por especie · ${catalogGroups.length} grupos`;
   }
 }
 
@@ -604,9 +616,16 @@ async function bootstrap() {
 if (typeof module !== "undefined" && module.exports) {
   module.exports = {
     bootstrap,
+    handleUrlSave,
+    mergeSpeciesWithOverrides,
+    renderSpeciesCard,
     renderError,
     readStoredOverrides,
     sanitizeUrl,
+    __testing: {
+      persistSpeciesUrl,
+      state,
+    },
   };
 }
 
