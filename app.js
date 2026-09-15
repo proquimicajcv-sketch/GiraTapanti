@@ -1,6 +1,5 @@
 const DATA_URL = "./tapanti_curada_100_confirmada.json";
 const STORAGE_KEY = "tapanti.speciesCatalog.images.v2";
-const LEGACY_STORAGE_KEY = "tapanti.speciesCatalog.v1";
 const URL_MAX_LENGTH = 2048;
 
 const state = {
@@ -180,15 +179,12 @@ function createPlaceholderDataUrl(species) {
 
 function readStoredOverrides() {
   const parsedCurrent = readStoredObject(STORAGE_KEY);
-  if (parsedCurrent) return parsedCurrent;
+  if (!parsedCurrent) return {};
 
-  const legacy = readStoredObject(LEGACY_STORAGE_KEY);
-  if (!legacy) return {};
-
-  if (Array.isArray(legacy)) {
-    return legacy.reduce((accumulator, item) => {
+  if (Array.isArray(parsedCurrent)) {
+    return parsedCurrent.reduce((accumulator, item) => {
       if (!item || !item.id) return accumulator;
-      const publicImageUrl = sanitizeUrl(item.publicImageUrl || item.imageUrl);
+      const publicImageUrl = sanitizeUrl(item.publicImageUrl);
       if (publicImageUrl) {
         accumulator[item.id] = { publicImageUrl };
       }
@@ -196,7 +192,7 @@ function readStoredOverrides() {
     }, {});
   }
 
-  return Object.entries(legacy).reduce((accumulator, [id, value]) => {
+  return Object.entries(parsedCurrent).reduce((accumulator, [id, value]) => {
     const publicImageUrl = sanitizeUrl(value && value.publicImageUrl);
     if (publicImageUrl) {
       accumulator[id] = { publicImageUrl };
@@ -534,4 +530,15 @@ async function bootstrap() {
   }
 }
 
-bootstrap();
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = {
+    bootstrap,
+    renderError,
+    readStoredOverrides,
+    sanitizeUrl,
+  };
+}
+
+if (typeof window !== "undefined" && typeof document !== "undefined" && !window.__TAPANTI_DISABLE_AUTO_BOOTSTRAP__) {
+  bootstrap();
+}

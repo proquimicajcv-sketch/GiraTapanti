@@ -19,8 +19,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Duellmanohyla%20rufioculis",
     "specUrl": "https://www.gbif.org/species/search?q=Duellmanohyla%20rufioculis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 1
+    "imageUrl": ""
   },
   {
     "id": "bolitoglossa-epimela",
@@ -42,8 +41,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bolitoglossa%20epimela",
     "specUrl": "https://www.gbif.org/species/search?q=Bolitoglossa%20epimela",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 2
+    "imageUrl": ""
   },
   {
     "id": "diasporus-hylaeformis",
@@ -65,8 +63,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Diasporus%20hylaeformis",
     "specUrl": "https://www.gbif.org/species/search?q=Diasporus%20hylaeformis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 3
+    "imageUrl": ""
   },
   {
     "id": "espadarana-prosoblepon",
@@ -88,8 +85,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Espadarana%20prosoblepon",
     "specUrl": "https://www.gbif.org/species/search?q=Espadarana%20prosoblepon",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 4
+    "imageUrl": ""
   },
   {
     "id": "isthmohyla-pictipes",
@@ -111,8 +107,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Isthmohyla%20pictipes",
     "specUrl": "https://www.gbif.org/species/search?q=Isthmohyla%20pictipes",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 5
+    "imageUrl": ""
   },
   {
     "id": "craugastor-crassidigitus",
@@ -134,8 +129,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Craugastor%20crassidigitus",
     "specUrl": "https://www.gbif.org/species/search?q=Craugastor%20crassidigitus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 6
+    "imageUrl": ""
   },
   {
     "id": "duellmanohyla-uranochroa",
@@ -157,8 +151,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Duellmanohyla%20uranochroa",
     "specUrl": "https://www.gbif.org/species/search?q=Duellmanohyla%20uranochroa",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 7
+    "imageUrl": ""
   },
   {
     "id": "hyalinobatrachium-fleischmanni",
@@ -180,8 +173,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Hyalinobatrachium%20fleischmanni",
     "specUrl": "https://www.gbif.org/species/search?q=Hyalinobatrachium%20fleischmanni",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 8
+    "imageUrl": ""
   },
   {
     "id": "sachatamia-albomaculata",
@@ -203,8 +195,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sachatamia%20albomaculata",
     "specUrl": "https://www.gbif.org/species/search?q=Sachatamia%20albomaculata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 9
+    "imageUrl": ""
   },
   {
     "id": "craugastor-stejnegerianus",
@@ -226,8 +217,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Craugastor%20stejnegerianus",
     "specUrl": "https://www.gbif.org/species/search?q=Craugastor%20stejnegerianus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 10
+    "imageUrl": ""
   },
   {
     "id": "craugastor-underwoodi",
@@ -249,8 +239,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Craugastor%20underwoodi",
     "specUrl": "https://www.gbif.org/species/search?q=Craugastor%20underwoodi",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 11
+    "imageUrl": ""
   },
   {
     "id": "pristimantis-cerasinus",
@@ -264,7 +253,7 @@
     "badgeClass": "b-amphibia",
     "status": "PREOCUPACIÓN MENOR (LC)",
     "autoridad": "Nombre científico compilado para el catálogo Tapantí #12 a partir del listado curado y fuentes especializadas de referencia enlazadas para Pristimantis cerasinus.",
-    "anatomia": "Registro curado para Pristimantis cerasinus (Craugastoridae) con énfasis en piel, extremidades, coloración y forma corporal visibles en recorridos húmedos de Tapantí.",
+    "anatomia": "Registro curado para Pristimantis cerasinus (Strabomantidae) con énfasis en piel, extremidades, coloración y forma corporal visibles en recorridos húmedos de Tapantí.",
     "fisiologia": "Alta dependencia de humedad ambiental y microhábitats estables; la fisiología cutánea hace sensible el registro a cambios de temperatura y perturbación.",
     "etologia": "Etología y hábitat orientados a recorridos en quebradas, hojarasca y vegetación ribereña; registrar hora, altura del perchado y cercanía al agua.",
     "curiosidad": "Verifica este registro de Rana de lluvia de ojos de cereza en campo con fotografía, notas del microhábitat y la fuente enlazada para fortalecer la curación del catálogo.",
@@ -272,8 +261,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pristimantis%20cerasinus",
     "specUrl": "https://www.gbif.org/species/search?q=Pristimantis%20cerasinus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 12
+    "imageUrl": ""
   },
   {
     "id": "pristimantis-cruentus",
@@ -287,7 +275,7 @@
     "badgeClass": "b-amphibia",
     "status": "PREOCUPACIÓN MENOR (LC)",
     "autoridad": "Nombre científico compilado para el catálogo Tapantí #13 a partir del listado curado y fuentes especializadas de referencia enlazadas para Pristimantis cruentus.",
-    "anatomia": "Registro curado para Pristimantis cruentus (Craugastoridae) con énfasis en piel, extremidades, coloración y forma corporal visibles en recorridos húmedos de Tapantí.",
+    "anatomia": "Registro curado para Pristimantis cruentus (Strabomantidae) con énfasis en piel, extremidades, coloración y forma corporal visibles en recorridos húmedos de Tapantí.",
     "fisiologia": "Alta dependencia de humedad ambiental y microhábitats estables; la fisiología cutánea hace sensible el registro a cambios de temperatura y perturbación.",
     "etologia": "Etología y hábitat orientados a recorridos en quebradas, hojarasca y vegetación ribereña; registrar hora, altura del perchado y cercanía al agua.",
     "curiosidad": "Verifica este registro de Rana de lluvia ensangrentada en campo con fotografía, notas del microhábitat y la fuente enlazada para fortalecer la curación del catálogo.",
@@ -295,8 +283,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pristimantis%20cruentus",
     "specUrl": "https://www.gbif.org/species/search?q=Pristimantis%20cruentus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 13
+    "imageUrl": ""
   },
   {
     "id": "incilius-coniferus",
@@ -318,8 +305,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Incilius%20coniferus",
     "specUrl": "https://www.gbif.org/species/search?q=Incilius%20coniferus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 14
+    "imageUrl": ""
   },
   {
     "id": "lithobates-warszewitschii",
@@ -341,8 +327,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Lithobates%20warszewitschii",
     "specUrl": "https://www.gbif.org/species/search?q=Lithobates%20warszewitschii",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 15
+    "imageUrl": ""
   },
   {
     "id": "bolitoglossa-colonnea",
@@ -364,8 +349,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bolitoglossa%20colonnea",
     "specUrl": "https://www.gbif.org/species/search?q=Bolitoglossa%20colonnea",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 16
+    "imageUrl": ""
   },
   {
     "id": "bolitoglossa-pesrubra",
@@ -387,8 +371,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bolitoglossa%20pesrubra",
     "specUrl": "https://www.gbif.org/species/search?q=Bolitoglossa%20pesrubra",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 17
+    "imageUrl": ""
   },
   {
     "id": "bolitoglossa-subpalmata",
@@ -410,8 +393,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bolitoglossa%20subpalmata",
     "specUrl": "https://www.gbif.org/species/search?q=Bolitoglossa%20subpalmata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 18
+    "imageUrl": ""
   },
   {
     "id": "nototriton-tapanti",
@@ -433,8 +415,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Nototriton%20tapanti",
     "specUrl": "https://www.gbif.org/species/search?q=Nototriton%20tapanti",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 19
+    "imageUrl": ""
   },
   {
     "id": "oedipina-uniformis",
@@ -456,8 +437,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Oedipina%20uniformis",
     "specUrl": "https://www.gbif.org/species/search?q=Oedipina%20uniformis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 20
+    "imageUrl": ""
   },
   {
     "id": "bothriechis-nigroviridis",
@@ -479,8 +459,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bothriechis%20nigroviridis",
     "specUrl": "https://www.gbif.org/species/search?q=Bothriechis%20nigroviridis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 26
+    "imageUrl": ""
   },
   {
     "id": "bothriechis-lateralis",
@@ -502,8 +481,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bothriechis%20lateralis",
     "specUrl": "https://www.gbif.org/species/search?q=Bothriechis%20lateralis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 27
+    "imageUrl": ""
   },
   {
     "id": "metlapilcoatlus-mexicanus",
@@ -525,8 +503,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Metlapilcoatlus%20mexicanus",
     "specUrl": "https://www.gbif.org/species/search?q=Metlapilcoatlus%20mexicanus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 28
+    "imageUrl": ""
   },
   {
     "id": "bothrops-asper",
@@ -548,8 +525,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bothrops%20asper",
     "specUrl": "https://www.gbif.org/species/search?q=Bothrops%20asper",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 29
+    "imageUrl": ""
   },
   {
     "id": "dipsas-articulata",
@@ -571,8 +547,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Dipsas%20articulata",
     "specUrl": "https://www.gbif.org/species/search?q=Dipsas%20articulata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 30
+    "imageUrl": ""
   },
   {
     "id": "ninia-celata",
@@ -594,8 +569,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Ninia%20celata",
     "specUrl": "https://www.gbif.org/species/search?q=Ninia%20celata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 31
+    "imageUrl": ""
   },
   {
     "id": "chironius-grandisquamis",
@@ -617,8 +591,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Chironius%20grandisquamis",
     "specUrl": "https://www.gbif.org/species/search?q=Chironius%20grandisquamis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 32
+    "imageUrl": ""
   },
   {
     "id": "geophis-brachycephalus",
@@ -640,8 +613,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Geophis%20brachycephalus",
     "specUrl": "https://www.gbif.org/species/search?q=Geophis%20brachycephalus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 33
+    "imageUrl": ""
   },
   {
     "id": "imantodes-cenchoa",
@@ -663,8 +635,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Imantodes%20cenchoa",
     "specUrl": "https://www.gbif.org/species/search?q=Imantodes%20cenchoa",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 34
+    "imageUrl": ""
   },
   {
     "id": "sibon-nebulatus",
@@ -686,8 +657,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sibon%20nebulatus",
     "specUrl": "https://www.gbif.org/species/search?q=Sibon%20nebulatus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 35
+    "imageUrl": ""
   },
   {
     "id": "anolis-tropidolepis",
@@ -709,8 +679,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Anolis%20tropidolepis",
     "specUrl": "https://www.gbif.org/species/search?q=Anolis%20tropidolepis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 36
+    "imageUrl": ""
   },
   {
     "id": "anolis-altae",
@@ -732,8 +701,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Anolis%20altae",
     "specUrl": "https://www.gbif.org/species/search?q=Anolis%20altae",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 37
+    "imageUrl": ""
   },
   {
     "id": "anolis-vociferans",
@@ -755,8 +723,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Anolis%20vociferans",
     "specUrl": "https://www.gbif.org/species/search?q=Anolis%20vociferans",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 38
+    "imageUrl": ""
   },
   {
     "id": "celestus-montanus",
@@ -778,8 +745,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Celestus%20montanus",
     "specUrl": "https://www.gbif.org/species/search?q=Celestus%20montanus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 39
+    "imageUrl": ""
   },
   {
     "id": "diploglossus-bilobatus",
@@ -801,8 +767,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Diploglossus%20bilobatus",
     "specUrl": "https://www.gbif.org/species/search?q=Diploglossus%20bilobatus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 40
+    "imageUrl": ""
   },
   {
     "id": "sceloporus-malachiticus",
@@ -824,8 +789,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sceloporus%20malachiticus",
     "specUrl": "https://www.gbif.org/species/search?q=Sceloporus%20malachiticus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 41
+    "imageUrl": ""
   },
   {
     "id": "micrurus-nigrocinctus",
@@ -847,8 +811,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Micrurus%20nigrocinctus",
     "specUrl": "https://www.gbif.org/species/search?q=Micrurus%20nigrocinctus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 42
+    "imageUrl": ""
   },
   {
     "id": "micrurus-mipartitus",
@@ -870,8 +833,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Micrurus%20mipartitus",
     "specUrl": "https://www.gbif.org/species/search?q=Micrurus%20mipartitus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 43
+    "imageUrl": ""
   },
   {
     "id": "erythrolamprus-mimus",
@@ -893,8 +855,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Erythrolamprus%20mimus",
     "specUrl": "https://www.gbif.org/species/search?q=Erythrolamprus%20mimus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 44
+    "imageUrl": ""
   },
   {
     "id": "oxybelis-brevirostris",
@@ -916,8 +877,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Oxybelis%20brevirostris",
     "specUrl": "https://www.gbif.org/species/search?q=Oxybelis%20brevirostris",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 45
+    "imageUrl": ""
   },
   {
     "id": "tapirus-bairdii",
@@ -939,8 +899,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Tapirus%20bairdii",
     "specUrl": "https://www.gbif.org/species/search?q=Tapirus%20bairdii",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 51
+    "imageUrl": ""
   },
   {
     "id": "leopardus-pardalis",
@@ -962,8 +921,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Leopardus%20pardalis",
     "specUrl": "https://www.gbif.org/species/search?q=Leopardus%20pardalis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 52
+    "imageUrl": ""
   },
   {
     "id": "leopardus-wiedii",
@@ -985,8 +943,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Leopardus%20wiedii",
     "specUrl": "https://www.gbif.org/species/search?q=Leopardus%20wiedii",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 53
+    "imageUrl": ""
   },
   {
     "id": "puma-concolor",
@@ -1008,8 +965,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Puma%20concolor",
     "specUrl": "https://www.gbif.org/species/search?q=Puma%20concolor",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 54
+    "imageUrl": ""
   },
   {
     "id": "nasua-narica",
@@ -1031,8 +987,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Nasua%20narica",
     "specUrl": "https://www.gbif.org/species/search?q=Nasua%20narica",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 55
+    "imageUrl": ""
   },
   {
     "id": "procyon-lotor",
@@ -1054,8 +1009,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Procyon%20lotor",
     "specUrl": "https://www.gbif.org/species/search?q=Procyon%20lotor",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 56
+    "imageUrl": ""
   },
   {
     "id": "eira-barbara",
@@ -1077,8 +1031,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Eira%20barbara",
     "specUrl": "https://www.gbif.org/species/search?q=Eira%20barbara",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 57
+    "imageUrl": ""
   },
   {
     "id": "dasyprocta-punctata",
@@ -1100,8 +1053,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Dasyprocta%20punctata",
     "specUrl": "https://www.gbif.org/species/search?q=Dasyprocta%20punctata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 58
+    "imageUrl": ""
   },
   {
     "id": "cuniculus-paca",
@@ -1123,8 +1075,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Cuniculus%20paca",
     "specUrl": "https://www.gbif.org/species/search?q=Cuniculus%20paca",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 59
+    "imageUrl": ""
   },
   {
     "id": "choloepus-hoffmanni",
@@ -1146,8 +1097,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Choloepus%20hoffmanni",
     "specUrl": "https://www.gbif.org/species/search?q=Choloepus%20hoffmanni",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 60
+    "imageUrl": ""
   },
   {
     "id": "mazama-temama",
@@ -1169,8 +1119,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Mazama%20temama",
     "specUrl": "https://www.gbif.org/species/search?q=Mazama%20temama",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 61
+    "imageUrl": ""
   },
   {
     "id": "pecari-tajacu",
@@ -1192,8 +1141,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pecari%20tajacu",
     "specUrl": "https://www.gbif.org/species/search?q=Pecari%20tajacu",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 62
+    "imageUrl": ""
   },
   {
     "id": "alouatta-palliata",
@@ -1215,8 +1163,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Alouatta%20palliata",
     "specUrl": "https://www.gbif.org/species/search?q=Alouatta%20palliata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 63
+    "imageUrl": ""
   },
   {
     "id": "cebus-imitator",
@@ -1238,8 +1185,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Cebus%20imitator",
     "specUrl": "https://www.gbif.org/species/search?q=Cebus%20imitator",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 64
+    "imageUrl": ""
   },
   {
     "id": "bassaricyon-gabbii",
@@ -1261,8 +1207,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Bassaricyon%20gabbii",
     "specUrl": "https://www.gbif.org/species/search?q=Bassaricyon%20gabbii",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 65
+    "imageUrl": ""
   },
   {
     "id": "potos-flavus",
@@ -1284,8 +1229,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Potos%20flavus",
     "specUrl": "https://www.gbif.org/species/search?q=Potos%20flavus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 66
+    "imageUrl": ""
   },
   {
     "id": "didelphis-marsupialis",
@@ -1307,8 +1251,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Didelphis%20marsupialis",
     "specUrl": "https://www.gbif.org/species/search?q=Didelphis%20marsupialis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 67
+    "imageUrl": ""
   },
   {
     "id": "tamandua-mexicana",
@@ -1330,8 +1273,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Tamandua%20mexicana",
     "specUrl": "https://www.gbif.org/species/search?q=Tamandua%20mexicana",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 68
+    "imageUrl": ""
   },
   {
     "id": "sylvilagus-dicei",
@@ -1353,8 +1295,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sylvilagus%20dicei",
     "specUrl": "https://www.gbif.org/species/search?q=Sylvilagus%20dicei",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 69
+    "imageUrl": ""
   },
   {
     "id": "heteromys-desmarestianus",
@@ -1376,8 +1317,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Heteromys%20desmarestianus",
     "specUrl": "https://www.gbif.org/species/search?q=Heteromys%20desmarestianus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 70
+    "imageUrl": ""
   },
   {
     "id": "pharomachrus-mocinno",
@@ -1399,8 +1339,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pharomachrus%20mocinno",
     "specUrl": "https://xeno-canto.org/explore?query=Pharomachrus%20mocinno",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 76
+    "imageUrl": ""
   },
   {
     "id": "momotus-lessonii",
@@ -1422,8 +1361,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Momotus%20lessonii",
     "specUrl": "https://xeno-canto.org/explore?query=Momotus%20lessonii",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 77
+    "imageUrl": ""
   },
   {
     "id": "aulacorhynchus-prasinus",
@@ -1445,8 +1383,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Aulacorhynchus%20prasinus",
     "specUrl": "https://xeno-canto.org/explore?query=Aulacorhynchus%20prasinus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 78
+    "imageUrl": ""
   },
   {
     "id": "procnias-tricarunculatus",
@@ -1468,8 +1405,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Procnias%20tricarunculatus",
     "specUrl": "https://xeno-canto.org/explore?query=Procnias%20tricarunculatus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 79
+    "imageUrl": ""
   },
   {
     "id": "eugenes-spectabilis",
@@ -1491,8 +1427,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Eugenes%20spectabilis",
     "specUrl": "https://xeno-canto.org/explore?query=Eugenes%20spectabilis",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 80
+    "imageUrl": ""
   },
   {
     "id": "panterpe-insignis",
@@ -1514,8 +1449,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Panterpe%20insignis",
     "specUrl": "https://xeno-canto.org/explore?query=Panterpe%20insignis",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 81
+    "imageUrl": ""
   },
   {
     "id": "catharus-aurantiirostris",
@@ -1537,8 +1471,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Catharus%20aurantiirostris",
     "specUrl": "https://xeno-canto.org/explore?query=Catharus%20aurantiirostris",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 82
+    "imageUrl": ""
   },
   {
     "id": "myioborus-torquatus",
@@ -1560,8 +1493,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Myioborus%20torquatus",
     "specUrl": "https://xeno-canto.org/explore?query=Myioborus%20torquatus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 83
+    "imageUrl": ""
   },
   {
     "id": "semnornis-frantzii",
@@ -1583,8 +1515,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Semnornis%20frantzii",
     "specUrl": "https://xeno-canto.org/explore?query=Semnornis%20frantzii",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 84
+    "imageUrl": ""
   },
   {
     "id": "campylopterus-hemileucurus",
@@ -1606,8 +1537,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Campylopterus%20hemileucurus",
     "specUrl": "https://xeno-canto.org/explore?query=Campylopterus%20hemileucurus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 85
+    "imageUrl": ""
   },
   {
     "id": "chamaepetes-unicolor",
@@ -1629,8 +1559,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Chamaepetes%20unicolor",
     "specUrl": "https://xeno-canto.org/explore?query=Chamaepetes%20unicolor",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 86
+    "imageUrl": ""
   },
   {
     "id": "turdus-plebejus",
@@ -1652,8 +1581,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Turdus%20plebejus",
     "specUrl": "https://xeno-canto.org/explore?query=Turdus%20plebejus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 87
+    "imageUrl": ""
   },
   {
     "id": "chlorospingus-ophthalmicus",
@@ -1675,8 +1603,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Chlorospingus%20ophthalmicus",
     "specUrl": "https://xeno-canto.org/explore?query=Chlorospingus%20ophthalmicus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 88
+    "imageUrl": ""
   },
   {
     "id": "pygmornis-hermitae",
@@ -1698,8 +1625,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Pygmornis%20hermitae",
     "specUrl": "https://xeno-canto.org/explore?query=Pygmornis%20hermitae",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 89
+    "imageUrl": ""
   },
   {
     "id": "coeligena-hemileuca",
@@ -1721,8 +1647,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Coeligena%20hemileuca",
     "specUrl": "https://xeno-canto.org/explore?query=Coeligena%20hemileuca",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 90
+    "imageUrl": ""
   },
   {
     "id": "touit-costaricensis",
@@ -1744,8 +1669,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Touit%20costaricensis",
     "specUrl": "https://xeno-canto.org/explore?query=Touit%20costaricensis",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 91
+    "imageUrl": ""
   },
   {
     "id": "cyanolyca-argentigula",
@@ -1767,8 +1691,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Cyanolyca%20argentigula",
     "specUrl": "https://xeno-canto.org/explore?query=Cyanolyca%20argentigula",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 92
+    "imageUrl": ""
   },
   {
     "id": "zeledonia-coronata",
@@ -1790,8 +1713,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Zeledonia%20coronata",
     "specUrl": "https://xeno-canto.org/explore?query=Zeledonia%20coronata",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 93
+    "imageUrl": ""
   },
   {
     "id": "spizaetus-ornatus",
@@ -1813,8 +1735,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Spizaetus%20ornatus",
     "specUrl": "https://xeno-canto.org/explore?query=Spizaetus%20ornatus",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 94
+    "imageUrl": ""
   },
   {
     "id": "catharus-frantzii",
@@ -1836,8 +1757,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Catharus%20frantzii",
     "specUrl": "https://xeno-canto.org/explore?query=Catharus%20frantzii",
     "specLabel": "Xeno-canto / ficha sonora",
-    "imageUrl": "",
-    "sourceCatalogNumber": 95
+    "imageUrl": ""
   },
   {
     "id": "morpho-peleides",
@@ -1859,8 +1779,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Morpho%20peleides",
     "specUrl": "https://www.gbif.org/species/search?q=Morpho%20peleides",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 111
+    "imageUrl": ""
   },
   {
     "id": "chrysina-chrysargyrea",
@@ -1882,8 +1801,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Chrysina%20chrysargyrea",
     "specUrl": "https://www.gbif.org/species/search?q=Chrysina%20chrysargyrea",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 112
+    "imageUrl": ""
   },
   {
     "id": "dynastes-hercules",
@@ -1905,8 +1823,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Dynastes%20hercules",
     "specUrl": "https://www.gbif.org/species/search?q=Dynastes%20hercules",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 113
+    "imageUrl": ""
   },
   {
     "id": "ptychophallus-tapanti",
@@ -1928,8 +1845,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Ptychophallus%20tapanti",
     "specUrl": "https://www.gbif.org/species/search?q=Ptychophallus%20tapanti",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 114
+    "imageUrl": ""
   },
   {
     "id": "trichonephila-clavipes",
@@ -1951,8 +1867,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Trichonephila%20clavipes",
     "specUrl": "https://www.gbif.org/species/search?q=Trichonephila%20clavipes",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 115
+    "imageUrl": ""
   },
   {
     "id": "atta-cephalotes",
@@ -1974,8 +1889,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Atta%20cephalotes",
     "specUrl": "https://www.gbif.org/species/search?q=Atta%20cephalotes",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 116
+    "imageUrl": ""
   },
   {
     "id": "heliconius-cydno",
@@ -1997,8 +1911,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Heliconius%20cydno",
     "specUrl": "https://www.gbif.org/species/search?q=Heliconius%20cydno",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 117
+    "imageUrl": ""
   },
   {
     "id": "paraponera-clavata",
@@ -2020,8 +1933,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Paraponera%20clavata",
     "specUrl": "https://www.gbif.org/species/search?q=Paraponera%20clavata",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 118
+    "imageUrl": ""
   },
   {
     "id": "caligo-eurilochus",
@@ -2043,8 +1955,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Caligo%20eurilochus",
     "specUrl": "https://www.gbif.org/species/search?q=Caligo%20eurilochus",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 119
+    "imageUrl": ""
   },
   {
     "id": "megasoma-elephas",
@@ -2066,8 +1977,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Megasoma%20elephas",
     "specUrl": "https://www.gbif.org/species/search?q=Megasoma%20elephas",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 120
+    "imageUrl": ""
   },
   {
     "id": "lepanthes-machogaffensis",
@@ -2089,8 +1999,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Lepanthes%20machogaffensis",
     "specUrl": "https://www.gbif.org/species/search?q=Lepanthes%20machogaffensis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 126
+    "imageUrl": ""
   },
   {
     "id": "epidendrum-jorge-warneri",
@@ -2112,8 +2021,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Epidendrum%20jorge-warneri",
     "specUrl": "https://www.gbif.org/species/search?q=Epidendrum%20jorge-warneri",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 127
+    "imageUrl": ""
   },
   {
     "id": "epidendrum-lacustre",
@@ -2135,8 +2043,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Epidendrum%20lacustre",
     "specUrl": "https://www.gbif.org/species/search?q=Epidendrum%20lacustre",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 128
+    "imageUrl": ""
   },
   {
     "id": "masdevallia-striatella",
@@ -2158,8 +2065,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Masdevallia%20striatella",
     "specUrl": "https://www.gbif.org/species/search?q=Masdevallia%20striatella",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 129
+    "imageUrl": ""
   },
   {
     "id": "sobralia-purpurea",
@@ -2181,8 +2087,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Sobralia%20purpurea",
     "specUrl": "https://www.gbif.org/species/search?q=Sobralia%20purpurea",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 130
+    "imageUrl": ""
   },
   {
     "id": "platystele-montezumae",
@@ -2204,8 +2109,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Platystele%20montezumae",
     "specUrl": "https://www.gbif.org/species/search?q=Platystele%20montezumae",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 131
+    "imageUrl": ""
   },
   {
     "id": "maxillaria-ringens",
@@ -2227,8 +2131,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Maxillaria%20ringens",
     "specUrl": "https://www.gbif.org/species/search?q=Maxillaria%20ringens",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 132
+    "imageUrl": ""
   },
   {
     "id": "gunnera-insignis",
@@ -2250,8 +2153,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Gunnera%20insignis",
     "specUrl": "https://www.gbif.org/species/search?q=Gunnera%20insignis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 133
+    "imageUrl": ""
   },
   {
     "id": "cyathea-caracasana",
@@ -2273,8 +2175,7 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Cyathea%20caracasana",
     "specUrl": "https://www.gbif.org/species/search?q=Cyathea%20caracasana",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 134
+    "imageUrl": ""
   },
   {
     "id": "werauhia-costaricensis",
@@ -2296,7 +2197,6 @@
     "inatUrl": "https://www.inaturalist.org/taxa/search?q=Werauhia%20costaricensis",
     "specUrl": "https://www.gbif.org/species/search?q=Werauhia%20costaricensis",
     "specLabel": "GBIF / ficha de especie",
-    "imageUrl": "",
-    "sourceCatalogNumber": 135
+    "imageUrl": ""
   }
 ]

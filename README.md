@@ -40,7 +40,6 @@ Las URLs de imagen personalizadas se guardan en:
 tapanti.speciesCatalog.images.v2
 ```
 
-Si existían datos de la versión anterior (`tapanti.speciesCatalog.v1`), la app intenta reutilizar sus imágenes guardadas como migración ligera.
 
 ## Mantenimiento del catálogo
 
