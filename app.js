@@ -326,7 +326,17 @@ function matchesFilters(species) {
 
 function renderEmptyState() {
   elements.speciesGrid.innerHTML = "";
-  elements.speciesGrid.append(elements.emptyStateTemplate.content.cloneNode(true));
+  if (elements.emptyStateTemplate?.content) {
+    elements.speciesGrid.append(elements.emptyStateTemplate.content.cloneNode(true));
+    return;
+  }
+
+  elements.speciesGrid.innerHTML = `
+    <article class="empty-state">
+      <h2>Sin resultados</h2>
+      <p>No hay especies que coincidan con los filtros actuales. Restablece los filtros para volver al catálogo completo.</p>
+    </article>
+  `;
 }
 
 function renderError(message) {
@@ -485,15 +495,16 @@ function handleUrlSave(speciesId, rawValue) {
   render();
 }
 
-function updateHeroMeta() {
-  const visibleGroups = uniqueSortedValues(state.species.map((item) => item.groupLabel));
-  elements.heroSpeciesCount.textContent = `${state.species.length} fichas curadas para identificación visual`;
+function updateHeroMeta(visibleSpecies = state.species) {
+  const visibleGroups = uniqueSortedValues(visibleSpecies.map((item) => item.groupLabel));
+  elements.heroSpeciesCount.textContent = `${visibleSpecies.length} fichas curadas para identificación visual`;
   elements.heroGroupCount.textContent = `Guardado local de URL por especie · ${visibleGroups.length} grupos`;
 }
 
 function render() {
   const visibleSpecies = state.species.filter(matchesFilters);
   const visibleLabel = visibleSpecies.length === 1 ? "especie visible" : "especies visibles";
+  updateHeroMeta(visibleSpecies);
 
   elements.resultsSummary.textContent = `${visibleSpecies.length} ${visibleLabel} · ${state.species.length} fichas en el catálogo curado`;
 
@@ -551,7 +562,6 @@ async function bootstrap() {
     const overrides = readStoredOverrides();
     state.species = mergeSpeciesWithOverrides(seedSpecies, overrides);
     populateFilters();
-    updateHeroMeta();
     bindEvents();
     render();
   } catch (error) {
